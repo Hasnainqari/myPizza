@@ -1,8 +1,8 @@
-import { Text, View, Image, TouchableOpacity } from 'react-native';
-// import { TouchableOpacity } from 'react-native-gesture-handler';
+import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 const HomeScreen = () => {
   var pizzaImg = require('../assest/Card/crustone.png');
+  var pizzaImg2 = require('../assest/Card/crusttwo.png');
 
   const B = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>;
   return (
@@ -134,6 +134,58 @@ const HomeScreen = () => {
               </TouchableOpacity>
             </View>
           </View>
+        </View>
+      </View>
+      <View style={{
+        justifyContent: 'center',
+        alignContent: 'center',
+        alignSelf: 'center',
+      }}>
+        <View style={{
+          backgroundColor: 'white',
+          borderTopRightRadius: 25,
+          borderTopLeftRadius: 25,
+          width: 320,
+          height: 270,
+          marginTop: -250,
+          flexDirection: 'column',
+          alignContent: 'center',
+          alignSelf: 'center',
+          padding: 5,
+        }}>
+          <Text style={{
+            top: 12,
+            textAlign: 'center',
+            color: '#F5313F',
+            fontFamily: 'Roboto',
+            fontSize: 25,
+            fontWeight: '300',
+          }}>
+            Create your <B>Own pizza</B>
+          </Text>
+          <Text style={{
+            top: 12,
+            letterSpacing: 1.2,
+            textAlign: 'center',
+            color: '#A0A8CC',
+            fontFamily: 'Roboto',
+            textTransform: 'uppercase',
+            fontSize: 10,
+            fontWeight: '700',
+          }}>
+            The cost will depend on your customization
+          </Text>
+          <Image
+            source={pizzaImg2}
+            style={{
+              // marginRight: 100,
+              marginLeft: -20,
+              top: 10,
+              width: 350,
+              height: 250,
+            }}>
+
+          </Image>
         </View>
       </View>
     </View>
