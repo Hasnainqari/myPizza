@@ -1,6 +1,6 @@
 import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-const HomeScreen = () => {
+const HomeScreen = (navigation) => {
   var pizzaImg = require('../assest/Card/crustone.png');
   var pizzaImg2 = require('../assest/Card/crusttwo.png');
 

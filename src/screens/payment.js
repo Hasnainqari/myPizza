@@ -1,11 +1,9 @@
 import { Text, View } from 'react-native';
-
-function ChatScreen({ navigation }) {
+import React from 'react';
+ export default function PaymentMethod({}) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={{fontSize: 20}}>Chat screen</Text>
+        <Text style={{fontSize: 20}}>Payment</Text>
       </View>
     );
   }
-
-  export default ChatScreen;

@@ -4,11 +4,11 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import DrawerItem from '@react-navigation/drawer';
 import HomeScreen from '../screens/home';
-import ChatScreen from '../screens/chat';
+import PaymentMethod from '../screens/payment.js';
 
 
 
-function MainMenu({ }) {
+function MainMenu({ navigation }) {
     var ProfileFront = require('../assest/profile/profilefront.png');
     var profileIcon = require('../assest/drawerIcon/Vector.png');
     var paymentIcon = require('../assest/drawerIcon/Payment.png');
@@ -132,7 +132,7 @@ function MainMenu({ }) {
                         </Image>
                         <TouchableOpacity>
                             <Text
-                                // onPress={() => navigation.navigate('Home')} 
+                                onPress={() => navigation.navigate('Payment')}
                                 style={{
                                     color: '#6D6E9C',
                                     left: 48,
@@ -349,8 +349,8 @@ export default function App() {
                         </Image>)
                     }} />
                 <Drawer.Screen
-                    name="Chat"
-                    component={ChatScreen} />
+                    name="Payment"
+                    component={PaymentMethod} />
             </Drawer.Navigator>
         </NavigationContainer>
     );
