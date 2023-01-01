@@ -330,15 +330,17 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
 
-    const Baket = require('../assest/Icon/Vector.png');
+    var Baket = require('../assest/Icon/Vector.png');
+    var homeImag = require('../assest/Icon/home.png');
 
     return (
         <NavigationContainer theme={MyTheme}>
             <Drawer.Navigator initialRouteName="Home" drawerContent={MainMenu} >
                 <Drawer.Screen
-                    name="Deliver to Home"
+                    name="Home"
                     component={HomeScreen}
                     options={{
+                        title: 'Deliever to Home:',
                         headerRight: () =>
                         (<Image source={Baket}
                             style={{
@@ -350,7 +352,26 @@ export default function App() {
                     }} />
                 <Drawer.Screen
                     name="Payment"
-                    component={PaymentMethod} />
+                    component={PaymentMethod}
+                    options={{
+                        title: "Uncle John Pizzas",
+                        headerTitleAlign: 'center',
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (<Image
+                            source={homeImag}
+                            style={{
+                                width: 17,
+                                height: 16.15,
+                                marginRight: 20,                                
+                            }}>
+                        </Image>)
+                    }}/>
             </Drawer.Navigator>
         </NavigationContainer>
     );
