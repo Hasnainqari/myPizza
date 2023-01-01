@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, Button, View, Image } from 'react-native';
+import { Text, Button, View, Image, TouchableOpacity } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import DrawerItem from '@react-navigation/drawer';
@@ -7,14 +7,26 @@ import HomeScreen from '../screens/home';
 import ChatScreen from '../screens/chat';
 
 
-function MainMenu ({}){
-    var profileBack = require('../assest/profile/profileback.png');
+
+function MainMenu({ }) {
     var ProfileFront = require('../assest/profile/profilefront.png');
-    return(
-        <View style={{flex:1, flexDirection: 'column', }}>
+    var profileIcon = require('../assest/drawerIcon/Vector.png');
+    var paymentIcon = require('../assest/drawerIcon/Payment.png');
+    var orderHistory = require('../assest/drawerIcon/OrderHistory.png');
+    var address = require('../assest/drawerIcon/Location.png');
+    var helpCenter = require('../assest/drawerIcon/Help.png');
+    var setting = require('../assest/drawerIcon/Settings.png');
+    var logout = require('../assest/drawerIcon/log.png');
+    var logarrow = require('../assest/drawerIcon/logarrow.png');
+    return (
+        <View
+            style={{
+                flex: 1,
+                flexDirection: 'column',
+            }}>
             <View style={{
-                 backgroundColor: 'white',
-                 flex: 1.5,
+                backgroundColor: 'white',
+                flex: 1.18,
             }}>
                 <View style={{
                     justifyContent: 'center',
@@ -22,38 +34,290 @@ function MainMenu ({}){
                     alignItems: 'center',
                     marginTop: 15,
                 }}>
-                    <Image 
-                    source={ProfileFront} 
-                    style={{
-                        width: 130,
-                        height: 130,
-                        opacity: 0.2,
-                        top:21,
-                    }}>
+                    <Image
+                        source={ProfileFront}
+                        style={{
+                            width: 130,
+                            height: 130,
+                            opacity: 0.2,
+                            top: 21,
+                        }}>
                     </Image>
-                    <Image 
-                    source={ProfileFront} 
+                    <Image
+                        source={ProfileFront}
+                        style={{
+                            width: 100,
+                            height: 100,
+                            marginTop: -95,
+                        }}></Image>
+                    <Text
+                        style={{
+                            top: 8,
+                            fontSize: 18.89,
+                            fontWeight: '700',
+                            color: '#6D6E9C',
+                            fontFamily: 'Roboto',
+                        }}>Jaykey del Mar</Text>
+                    <Text
+                        style={{
+                            top: 4,
+                            fontSize: 13.22,
+                            fontFamily: 'Roboto',
+                            fontWeight: '400',
+                            color: '#A0A8CC',
+                        }}>Janedone@gmail.com
+                    </Text>
+                </View>
+            </View>
+            <View
+                style={{
+                    top: 18,
+                    backgroundColor: '#F4F3F9',
+                    flex: 2,
+                }}>
+                <View
                     style={{
-                        width: 100,
-                        height:100,
-                        marginTop: -95,
-                    }}></Image>
-                    <Text 
+                        height: 280,
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignContent: 'center',
+                        alignItems: 'center',
+                    }}>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 40,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={profileIcon}
+                            style={{
+                                left: 10,
+                                width: 20,
+                                height: 19,
+                                color: '#F5313F',
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                // onPress={() => navigation.navigate('Home')} 
+                                style={{
+                                    color: '#6D6E9C',
+                                    left: 53,
+                                    letterSpacing: 1,
+                                    fontSize: 15,
+                                    bottom: 1,
+                                    fontWeight: '600',
+                                }}>
+                                Profile
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 20,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={paymentIcon}
+                            style={{
+                                left: 10,
+                                width: 25,
+                                height: 15,
+                                color: '#F5313F',
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                // onPress={() => navigation.navigate('Home')} 
+                                style={{
+                                    color: '#6D6E9C',
+                                    left: 48,
+                                    letterSpacing: 0.5,
+                                    fontSize: 15,
+                                    bottom: 5,
+                                    fontWeight: '600',
+                                }}>
+                                Payment Method
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 20,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={orderHistory}
+                            style={{
+                                left: 10.8,
+                                width: 20,
+                                bottom: 3,
+                                height: 21,
+                                color: '#F5313F',
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                // onPress={() => navigation.navigate('Home')} 
+                                style={{
+                                    color: '#6D6E9C',
+                                    left: 52.8,
+                                    letterSpacing: 0.8,
+                                    fontSize: 15,
+                                    bottom: 5.3,
+                                    fontWeight: '600',
+                                }}>
+                                Order History
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 20,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={address}
+                            style={{
+                                left: 12.8,
+                                width: 17,
+                                bottom: 3,
+                                height: 19,
+                                color: '#F5313F',
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                // onPress={() => navigation.navigate('Home')} 
+                                style={{
+                                    color: '#6D6E9C',
+                                    left: 55.8,
+                                    letterSpacing: 1,
+                                    fontSize: 15,
+                                    bottom: 5.3,
+                                    fontWeight: '600',
+                                }}>
+                                Addresses
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 20,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={helpCenter}
+                            style={{
+                                left: 12,
+                                width: 20,
+                                bottom: 3,
+                                height: 19,
+                                color: '#F5313F',
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                // onPress={() => navigation.navigate('Home')} 
+                                style={{
+                                    color: '#6D6E9C',
+                                    left: 53.5,
+                                    letterSpacing: 1,
+                                    fontSize: 15,
+                                    bottom: 5.3,
+                                    fontWeight: '600',
+                                }}>
+                                Help Center
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+            </View>
+            <View
+                style={{
+                    flex: 1,
+                    backgroundColor: '#ffffff'
+                }}>
+                <View
                     style={{
-                        top:8,
-                        fontSize:18.89,
-                        fontWeight: '700',
-                        color: '#6D6E9C',
-                        fontFamily: 'Roboto',
-                    }}>Jaykey del Mar</Text>
-                    <Text 
-                    style={{
-                        top:4,
-                        fontSize:13.22,
-                        fontFamily: 'Roboto',
-                        fontWeight: '400',
-                        color: '#A0A8CC',
-                    }}>Janedone@gmail.com</Text>
+                        justifyContent: 'center',
+                        alignContent: 'center',
+                        alignItems: 'center',
+                        marginTop: 40,
+                    }}>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 20,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={setting}
+                            style={{
+                                left: 12,
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                style={{
+                                    left: 53.5,
+                                    fontSize: 16,
+                                    color: '#6D6E9C',
+                                    letterSpacing: 1,
+                                    fontFamily: 'Roboto',
+                                    fontWeight: '700',
+                                    bottom: 1.3,
+                                }}>
+                                Settings
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 20,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={logout}
+                            style={{
+                                left: 15.8,
+                            }}>
+                        </Image>
+                        <Image
+                            source={logarrow}
+                            style={{
+                                left: -7.5,
+                                top: 5
+                            }}>
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                style={{
+                                    left: 41,
+                                    fontSize: 16,
+                                    color: '#6D6E9C',
+                                    letterSpacing: 1,
+                                    fontFamily: 'Roboto',
+                                    fontWeight: '900',
+                                    bottom: 2,
+                                }}>
+                                Log out
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
             </View>
         </View>
@@ -71,8 +335,22 @@ export default function App() {
     return (
         <NavigationContainer theme={MyTheme}>
             <Drawer.Navigator initialRouteName="Home" drawerContent={MainMenu} >
-                <Drawer.Screen name="Deliver to Home" component={HomeScreen} options={{ headerRight: () => (<Image source={ Baket } style={{ width: 17, height: 16.15, marginRight: 20 }}></Image>) }} />
-                <Drawer.Screen name="Chat" component={ChatScreen} />
+                <Drawer.Screen
+                    name="Deliver to Home"
+                    component={HomeScreen}
+                    options={{
+                        headerRight: () =>
+                        (<Image source={Baket}
+                            style={{
+                                width: 17,
+                                height: 16.15,
+                                marginRight: 20
+                            }}>
+                        </Image>)
+                    }} />
+                <Drawer.Screen
+                    name="Chat"
+                    component={ChatScreen} />
             </Drawer.Navigator>
         </NavigationContainer>
     );
@@ -82,7 +360,7 @@ export default function App() {
 const MyTheme = {
     ...DefaultTheme,
     colors: {
-      ...DefaultTheme.colors,
-      primary: 'rgb(255, 45, 82)',
+        ...DefaultTheme.colors,
+        primary: 'rgb(255, 45, 82)',
     },
-  };
+};
