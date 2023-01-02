@@ -203,25 +203,25 @@ export default function PaymentMethod({ navigation }) {
                 }}>
                 Contactless Delivery:
               </Text>
-            
-              <LinearGradient
-                  useAngle={true}
-                  angle={135}
-                  angleCenter={{ x: 0.5, y: 0.6 }}
-                  locations={[0.1, 0.6]}
-                  colors={['#F5313F', '#FFAA6C']}
-                  style={{
-                    opacity: 0.4,
-                    left: 244,
-                    top: -21,
-                    width: 58,
-                    height: 28,
-                    borderRadius: 15,
 
-                  }}>
-                  </LinearGradient>
-                 <TouchableOpacity>
-                 <LinearGradient
+              <LinearGradient
+                useAngle={true}
+                angle={135}
+                angleCenter={{ x: 0.5, y: 0.6 }}
+                locations={[0.1, 0.6]}
+                colors={['#F5313F', '#FFAA6C']}
+                style={{
+                  opacity: 0.4,
+                  left: 244,
+                  top: -21,
+                  width: 58,
+                  height: 28,
+                  borderRadius: 15,
+
+                }}>
+              </LinearGradient>
+              <TouchableOpacity>
+                <LinearGradient
                   useAngle={true}
                   angle={135}
                   angleCenter={{ x: 0.5, y: 0.6 }}
@@ -236,9 +236,9 @@ export default function PaymentMethod({ navigation }) {
                     height: 26,
                     borderRadius: 15,
                   }}>
-                  </LinearGradient>
-                 </TouchableOpacity>
-            
+                </LinearGradient>
+              </TouchableOpacity>
+
               <Text
                 style={{
                   top: -56,
