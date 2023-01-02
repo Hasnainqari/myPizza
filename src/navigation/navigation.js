@@ -101,7 +101,7 @@ function MainMenu({ navigation }) {
                         </Image>
                         <TouchableOpacity>
                             <Text
-                                // onPress={() => navigation.navigate('Home')} 
+                                onPress={() => navigation.navigate('Home')} 
                                 style={{
                                     color: '#6D6E9C',
                                     left: 53,
