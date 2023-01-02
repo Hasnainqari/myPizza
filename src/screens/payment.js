@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Button, } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -8,6 +8,8 @@ export default function PaymentMethod({ navigation }) {
   var cart = require('../assest/Icon/cartImage.png');
   var location = require('../assest/drawerIcon/Location.png');
   var pencil = require('../assest/drawerIcon/Pencil.png');
+  var pcard = require('../assest/drawerIcon/pcard.png');
+  var visa = require('../assest/drawerIcon/visa.png');
   return (
     <View
       style={{
@@ -83,7 +85,6 @@ export default function PaymentMethod({ navigation }) {
                   source={location}
                   style={{
                     top: -20,
-                    // left: ,
                     width: 23,
                     height: 25,
                     color: '#F5313F',
@@ -202,19 +203,248 @@ export default function PaymentMethod({ navigation }) {
                 }}>
                 Contactless Delivery:
               </Text>
+            
+              <LinearGradient
+                  useAngle={true}
+                  angle={135}
+                  angleCenter={{ x: 0.5, y: 0.6 }}
+                  locations={[0.1, 0.6]}
+                  colors={['#F5313F', '#FFAA6C']}
+                  style={{
+                    opacity: 0.4,
+                    left: 244,
+                    top: -21,
+                    width: 58,
+                    height: 28,
+                    borderRadius: 15,
+
+                  }}>
+                  </LinearGradient>
+                 <TouchableOpacity>
+                 <LinearGradient
+                  useAngle={true}
+                  angle={135}
+                  angleCenter={{ x: 0.5, y: 0.6 }}
+                  locations={[0.1, 0.6]}
+                  colors={['#F5313F', '#FFAA6C']}
+                  style={{
+                    // opacity: 0.3,
+                    left: 272,
+                    // right: -246,
+                    top: -48,
+                    width: 28,
+                    height: 26,
+                    borderRadius: 15,
+                  }}>
+                  </LinearGradient>
+                 </TouchableOpacity>
+            
               <Text
                 style={{
-                  top: 3,
+                  top: -56,
                   left: 35,
-                  fontSize: 17,
-                  // fontWeight:'100',
-                  letterSpacing: 0.5,
+                  fontSize: 15,
+                  letterSpacing: 0.1,
                   color: '#6D6E9C',
                 }}>
                 Rider will place order at your door
               </Text>
             </View>
           </View>
+          <View
+            style={{
+              elevation: 2,
+              shadowColor: '#000',
+              shadowOpacity: 0.7,
+              backgroundColor: '#ffffff',
+              width: '90%',
+              alignSelf: 'center',
+              height: '46%',
+              marginTop: 20,
+              marginBottom: 10,
+              borderRadius: 20,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignSelf: 'center',
+                padding: 2,
+                width: '80%',
+                marginTop: 20,
+              }}>
+              <TouchableOpacity>
+                <Image
+                  source={pcard}
+                  style={{
+                    top: 2,
+                    width: 24,
+                    left: 4,
+                    height: 22,
+                    color: '#F5313F',
+                  }}>
+                </Image>
+              </TouchableOpacity>
+              <Text
+                style={{
+                  fontSize: 25,
+                  left: 14,
+                  bottom: 5,
+                  fontFamily: 'Roboto',
+                  color: '#F5313F',
+                  fontWeight: '900',
+                  letterSpacing: -0.3,
+
+                }}>
+                <B>Payment method</B>
+              </Text>
+              <TouchableOpacity>
+                <LinearGradient
+                  useAngle={true}
+                  angle={135}
+                  angleCenter={{ x: 0.5, y: 0.6 }}
+                  locations={[0.1, 0.6]}
+                  colors={['#F5313F', '#FFAA6C']}
+                  style={{
+                    left: 65,
+                    width: 30,
+                    top: -1,
+                    height: 30,
+                    borderRadius: 15,
+                  }}>
+                  <Image
+                    source={pencil}
+                    style={{
+                      width: 15,
+                      opacity: 1.2,
+                      height: 15,
+                      left: 6.88,
+                      top: 6.88,
+                    }}>
+                  </Image></LinearGradient>
+              </TouchableOpacity>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                width: '85%',
+                marginTop: 20,
+                padding: 2,
+                alignSelf: 'center',
+                alignItems: 'center'
+              }}>
+              <Image
+                source={visa}
+                style={{
+                  left: 16,
+                  top: -23,
+                  width: 38,
+                  height: 44,
+                }}>
+              </Image>
+              <Text
+                style={{
+                  textTransform: 'uppercase',
+                  top: -35,
+                  left: 25,
+                  fontSize: 13,
+                  fontFamily: 'Roboto',
+                  fontWeight: '900',
+                  letterSpacing: 1,
+                  color: '#6D6E9C',
+                }}>
+                visa
+              </Text>
+              <Text
+                style={{
+                  textTransform: 'uppercase',
+                  top: -13,
+                  left: -5,
+                  fontSize: 15,
+                  fontFamily: 'Roboto',
+                  fontWeight: '700',
+                  letterSpacing: 1,
+                  color: '#A0A8CC',
+                }}>
+                ....0145
+              </Text>
+              <Text
+                style={{
+                  textTransform: 'uppercase',
+                  top: -15,
+                  left: 103,
+                  fontSize: 20,
+                  fontFamily: 'Roboto',
+                  fontWeight: '900',
+                  // letterSpacing:1,
+                  color: '#6D6E9C',
+                }}>
+                $ 14.50
+              </Text>
+            </View>
+            <TouchableOpacity>
+              <View
+                style={{
+                  width: 190,
+                  left: 36,
+                  top: -20,
+                  borderRadius: 10,
+                  height: 28,
+                  backgroundColor: '#DEF3E1',
+                }}>
+                <Text
+                  style={{
+                    top: 0.5,
+                    letterSpacing: 1,
+                    left: 13,
+                    padding: 2,
+                    fontFamily: 'Roboto',
+                    fontWeight: '700',
+                    textTransform: 'uppercase',
+                    fontSize: 14,
+                    color: '#57C168',
+                  }}>
+                  10% cashback applied
+                </Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+          <TouchableOpacity>
+            <View>
+              <LinearGradient
+                useAngle={true}
+                angle={108}
+                angleCenter={{ x: 0.7, y: 0.6 }}
+                locations={[0, 0.6]}
+                colors={['#F5313F', '#FFAA6C']}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  alignSelf: 'center',
+                  justifyContent: 'center',
+                  // marginTop: -,
+                }}>
+                <View
+                  style={{
+                    flex: 1,
+                    alignItems: 'center',
+                    padding: 5,
+                  }}>
+                  <Text
+                    style={{
+                      top: 4,
+                      fontSize: 28,
+                      color: '#ffffff',
+                      fontFamily: 'Roboto',
+                      fontWeight: '900',
+                      textAlign: 'center',
+                      letterSpacing: 1.5,
+                    }}>
+                    Place Order
+                  </Text>
+                </View>
+              </LinearGradient>
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

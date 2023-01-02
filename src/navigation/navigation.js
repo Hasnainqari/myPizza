@@ -340,15 +340,18 @@ export default function App() {
                     name="Home"
                     component={HomeScreen}
                     options={{
+
                         title: 'Deliever to Home:',
                         headerRight: () =>
-                        (<Image source={Baket}
-                            style={{
-                                width: 17,
-                                height: 16.15,
-                                marginRight: 20
-                            }}>
-                        </Image>)
+                        (<TouchableOpacity>
+                            <Image source={Baket}
+                                style={{
+                                    width: 17,
+                                    height: 16.15,
+                                    marginRight: 20
+                                }}>
+                            </Image>
+                        </TouchableOpacity>)
                     }} />
                 <Drawer.Screen
                     name="Payment"
@@ -363,15 +366,18 @@ export default function App() {
                             color: '#6D6E9C',
                         },
                         headerStyle: { backgroundColor: '#ffffff' },
-                        headerRight: () => (<Image
-                            source={homeImag}
-                            style={{
-                                width: 17,
-                                height: 16.15,
-                                marginRight: 20,                                
-                            }}>
-                        </Image>)
-                    }}/>
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
             </Drawer.Navigator>
         </NavigationContainer>
     );
