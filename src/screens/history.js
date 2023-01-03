@@ -16,7 +16,7 @@ export default function OrderHistory({ navigation }) {
                 angleCenter={{ x: 0.7, y: 0.6 }}
                 locations={[0, 0.6]}
                 colors={['#F5313F', '#FFAA6C']}
-                style={{ width: 500, height: 210 }}>
+                style={{ width: 500, height: 220 }}>
                 <View
                     style={{
                         paddingLeft: 29,
@@ -28,7 +28,7 @@ export default function OrderHistory({ navigation }) {
                             style={{
                                 width: 32,
                                 left: -6,
-                                top: 22,
+                                top: 21.5,
                                 height: 36,
                             }}>
                         </Image>
@@ -62,11 +62,10 @@ export default function OrderHistory({ navigation }) {
                         flexDirection: 'column',
                         justifyContent: 'space-between',
                         height: 500,
-                        top: 13,
+                        // top: 7,
                     }}>
                     <View
                         style={{
-                            borderColor: 'red',
                             backgroundColor: 'white',
                             opacity: 0.9,
                             width: '90%',
@@ -80,107 +79,96 @@ export default function OrderHistory({ navigation }) {
                         <View
                             style={{
                                 flexDirection: 'row',
-                                width: '80%',
-                                padding: 2,
-                                marginTop: 19,
+                                width: '100%',
+                                marginTop: 50,
+                                justifyContent: 'center',
+                                paddingBottom: 8,
+                                borderColor: '#A0A8CC',
+                                borderBottomWidth: 0.5,
                             }}>
-                            <Text
+
+                            < View
                                 style={{
-                                    top: 7,
-                                    fontFamily: 'Roboto',
-                                    fontWeight: 'bold',
-                                    fontSize: 10,
-                                    color: '#6D6E9C',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: 1,
+                                    top: -25,
+                                    width: 100,
+                                    alignItems: 'center'
                                 }}>
-                                ordered on
-                            </Text>
-                            <Text
+                                <Text
+                                    style={{
+                                        color: '#6D6E9C',
+                                        fontSize: 12,
+                                        fontWeight: '800',
+                                        textTransform: 'uppercase',
+                                    }}>
+                                    ordered on
+                                </Text>
+                                <Text
+                                    style={{
+                                        top: -5,
+                                        letterSpacing: 1,
+                                        color: '#F5313F',
+                                        fontSize: 18,
+                                        fontWeight: '800',
+                                    }}>
+                                    14 Feb
+                                </Text>
+                            </View>
+                            <View
                                 style={{
-                                    left: -56,
-                                    top: 18,
-                                    fontFamily: 'Roboto',
-                                    fontWeight: '900',
-                                    fontSize: 16.5,
-                                    color: '#F5313F',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: 1.3,
+                                    top: -25,
+                                    width: 100,
+                                    alignItems: 'center'
                                 }}>
-                                14 Feb
-                            </Text>
-                        </View>
-                        <View
-                            style={{
-                                flexDirection: 'row',
-                                width: '80%',
-                                padding: 2,
-                                left: 105,
-                                marginTop: -27,
-                            }}>
-                            <Text
+                                <Text
+                                    style={{
+                                        color: '#6D6E9C',
+                                        fontSize: 12,
+                                        fontWeight: '800',
+                                        textTransform: 'uppercase',
+                                    }}>
+                                    invoice #
+                                </Text>
+                                <Text
+                                    style={{
+                                        top: -5,
+                                        letterSpacing: 1,
+                                        color: '#F5313F',
+                                        fontSize: 17,
+                                        fontWeight: '800',
+                                    }}>
+                                    # 15569
+                                </Text>
+                            </View>
+                            <View
                                 style={{
-                                    top: 6,
-                                    fontFamily: 'Roboto',
-                                    fontWeight: 'bold',
-                                    fontSize: 10,
-                                    color: '#6D6E9C',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: 1,
+                                    top: -25,
+                                    width: 100,
+                                    alignItems: 'center'
                                 }}>
-                                invoice #
-                            </Text>
-                            <Text
-                                style={{
-                                    left: -59,
-                                    top: 17,
-                                    fontFamily: 'Roboto',
-                                    fontWeight: '900',
-                                    fontSize: 17,
-                                    color: '#F5313F',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: 1.1,
-                                }}>
-                                # 15569
-                            </Text>
-                        </View>
-                        <View
-                            style={{
-                                flexDirection: 'row',
-                                width: '80%',
-                                padding: 2,
-                                left: 200,
-                                marginTop: -31,
-                            }}>
-                            <Text
-                                style={{
-                                    top: 7,
-                                    fontFamily: 'Roboto',
-                                    fontWeight: 'bold',
-                                    fontSize: 10,
-                                    color: '#6D6E9C',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: 1,
-                                }}>
-                                total due
-                            </Text>
-                            <Text
-                                style={{
-                                    left: -55,
-                                    top: 18.5,
-                                    fontFamily: 'Roboto',
-                                    fontWeight: '900',
-                                    fontSize: 17,
-                                    color: '#F5313F',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: 1.8,
-                                }}>
-                                $14.50
-                            </Text>
+                                <Text
+                                    style={{
+                                        color: '#6D6E9C',
+                                        fontSize: 12,
+                                        fontWeight: '800',
+                                        textTransform: 'uppercase',
+                                    }}>
+                                    total due
+                                </Text>
+                                <Text
+                                    style={{
+                                        top: -5,
+                                        letterSpacing: 1,
+                                        color: '#F5313F',
+                                        fontSize: 17,
+                                        fontWeight: '800',
+                                    }}>
+                                    $14.50
+                                </Text>
+                            </View>
                         </View>
                     </View>
                 </View>
-            </View>
-        </View>
+            </View >
+        </View >
     )
 }
