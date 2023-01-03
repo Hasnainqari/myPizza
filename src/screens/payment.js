@@ -25,7 +25,7 @@ export default function PaymentMethod({ navigation }) {
         style={{ width: 500, height: 210 }}>
         <View
           style={{
-            paddingLeft: 40,
+            paddingLeft: 26,
             marginTop: 20,
           }}>
           <TouchableOpacity>

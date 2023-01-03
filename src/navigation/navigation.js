@@ -5,6 +5,7 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import DrawerItem from '@react-navigation/drawer';
 import HomeScreen from '../screens/home';
 import PaymentMethod from '../screens/payment.js';
+import OrderHistory from '../screens/history';
 
 
 
@@ -164,7 +165,7 @@ function MainMenu({ navigation }) {
                         </Image>
                         <TouchableOpacity>
                             <Text
-                                // onPress={() => navigation.navigate('Home')} 
+                                onPress={() => navigation.navigate('history')} 
                                 style={{
                                     color: '#6D6E9C',
                                     left: 52.8,
@@ -356,6 +357,31 @@ export default function App() {
                 <Drawer.Screen
                     name="Payment"
                     component={PaymentMethod}
+                    options={{
+                        title: "Uncle John Pizzas",
+                        headerTitleAlign: 'center',
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
+                    <Drawer.Screen
+                    name="history"
+                    component={OrderHistory}
                     options={{
                         title: "Uncle John Pizzas",
                         headerTitleAlign: 'center',
