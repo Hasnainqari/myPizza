@@ -4,6 +4,10 @@ import LinearGradient from 'react-native-linear-gradient';
 export default function OrderHistory({ navigation }) {
     var historyp2 = require('../assest/drawerIcon/historyp1.png');
     var historyp1 = require('../assest/drawerIcon/historyp2.png');
+    var orderconfirm = require('../assest/drawerIcon/order.png');
+    var prepare = require('../assest/drawerIcon/prepare.png');
+    var deliver = require('../assest/drawerIcon/deliver.png');
+    var transit = require('../assest/drawerIcon/transit.png');
     return (
         <View
             style={{
@@ -61,7 +65,7 @@ export default function OrderHistory({ navigation }) {
                     style={{
                         flexDirection: 'column',
                         justifyContent: 'space-between',
-                        height: 500,
+                        height: 550,
                         // top: 7,
                     }}>
                     <View
@@ -164,6 +168,73 @@ export default function OrderHistory({ navigation }) {
                                     }}>
                                     $14.50
                                 </Text>
+                            </View>
+                        </View>
+                        <View
+                            style={{
+                                flexDirection: 'column',
+                                width: '80%',
+                                marginTop: 12,
+                                padding: 3,
+                                height: '70%',
+                            }}>
+                            <View
+                                style={{
+                                    width: '100%',
+                                    alignItems: 'center',
+                                    flexDirection: 'row',
+                                    marginTop: 15,
+                                    padding: 5,
+                                }}>
+                                <Image
+                                    source={orderconfirm}
+                                    style={{
+                                        width: 30,
+                                        height: 30,
+                                        // bottom: 10,
+                                    }}>
+
+                                </Image>
+                                <Image
+                                    source={prepare}
+                                    style={{
+                                        width: 30,
+                                        height: 30,
+                                        left: -32,
+                                        top: 73,
+                                    }}>
+
+                                </Image>
+                                <Image
+                                    source={deliver}
+                                    style={{
+                                        width: 35,
+                                        height: 35,
+                                        left: -64,
+                                        top: 155,
+                                    }}>
+
+                                </Image>
+                                <Image
+                                    source={transit}
+                                    style={{
+                                        backgroundColor: 'white',
+                                        width: 35.5,
+                                        height: 35.5,
+                                        left: -100,
+                                        top: 225,
+                                    }}>
+
+                                </Image>
+                                {/* <Image
+                                    source={prepare}
+                                    style={{
+                                        width: 30,
+                                        height: 30,
+                                        left: -32,
+                                        top: 65,
+                                    }}>
+                                </Image> */}
                             </View>
                         </View>
                     </View>
