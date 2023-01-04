@@ -195,12 +195,24 @@ export default function OrderHistory({ navigation }) {
                                     }}>
 
                                 </Image>
+                                <Text 
+                                style={{
+                                    left: 50,
+                                }}>
+                                    11:41 AM
+                                </Text>
+                                <Text 
+                                style={{
+                                    left: 50,
+                                }}>
+                                    Order Confirmed
+                                </Text>
                                 <Image
                                     source={prepare}
                                     style={{
                                         width: 30,
                                         height: 30,
-                                        left: -32,
+                                        left: -77,
                                         top: 73,
                                     }}>
 
@@ -210,7 +222,7 @@ export default function OrderHistory({ navigation }) {
                                     style={{
                                         width: 35,
                                         height: 35,
-                                        left: -64,
+                                        left: -108,
                                         top: 155,
                                     }}>
 
@@ -221,7 +233,7 @@ export default function OrderHistory({ navigation }) {
                                         backgroundColor: 'white',
                                         width: 35.5,
                                         height: 35.5,
-                                        left: -100,
+                                        left: -144,
                                         top: 225,
                                     }}>
 
