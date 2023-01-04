@@ -185,68 +185,7 @@ export default function OrderHistory({ navigation }) {
                                     flexDirection: 'row',
                                     marginTop: 15,
                                     padding: 5,
-                                }}>
-                                <Image
-                                    source={orderconfirm}
-                                    style={{
-                                        width: 30,
-                                        height: 30,
-                                        // bottom: 10,
-                                    }}>
-
-                                </Image>
-                                <Text 
-                                style={{
-                                    left: 50,
-                                }}>
-                                    11:41 AM
-                                </Text>
-                                <Text 
-                                style={{
-                                    left: 50,
-                                }}>
-                                    Order Confirmed
-                                </Text>
-                                <Image
-                                    source={prepare}
-                                    style={{
-                                        width: 30,
-                                        height: 30,
-                                        left: -77,
-                                        top: 73,
-                                    }}>
-
-                                </Image>
-                                <Image
-                                    source={deliver}
-                                    style={{
-                                        width: 35,
-                                        height: 35,
-                                        left: -108,
-                                        top: 155,
-                                    }}>
-
-                                </Image>
-                                <Image
-                                    source={transit}
-                                    style={{
-                                        backgroundColor: 'white',
-                                        width: 35.5,
-                                        height: 35.5,
-                                        left: -144,
-                                        top: 225,
-                                    }}>
-
-                                </Image>
-                                {/* <Image
-                                    source={prepare}
-                                    style={{
-                                        width: 30,
-                                        height: 30,
-                                        left: -32,
-                                        top: 65,
-                                    }}>
-                                </Image> */}
+                                }}>       
                             </View>
                         </View>
                     </View>
