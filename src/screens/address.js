@@ -247,13 +247,13 @@ export default function Address({ navigation }) {
                                 flexDirection: 'row',
                                 width: 250,
                             }}>
-                            <View 
-                            style={{ 
-                                backgroundColor: '#feeaec',
-                                width: 25,
-                                height:25,
-                                left: 17,
-                                borderRadius: 30
+                            <View
+                                style={{
+                                    backgroundColor: '#feeaec',
+                                    width: 25,
+                                    height: 25,
+                                    left: 17,
+                                    borderRadius: 30
                                 }}>
                             </View>
                             <Image
