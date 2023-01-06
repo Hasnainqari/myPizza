@@ -185,7 +185,7 @@ export default function OrderHistory({ navigation }) {
                                     flexDirection: 'row',
                                     marginTop: 15,
                                     padding: 5,
-                                }}>       
+                                }}>
                             </View>
                         </View>
                     </View>

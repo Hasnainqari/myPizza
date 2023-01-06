@@ -4,8 +4,10 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import DrawerItem from '@react-navigation/drawer';
 import HomeScreen from '../screens/home';
-import PaymentMethod from '../screens/payment.js';
+import PaymentMethod from '../screens/payment';
 import OrderHistory from '../screens/history';
+import Address from '../screens/address';
+import LinearGradient from 'react-native-linear-gradient';
 
 
 
@@ -84,37 +86,37 @@ function MainMenu({ navigation }) {
                         alignContent: 'center',
                         alignItems: 'center',
                     }}>
-                    <View
-                        style={{
-                            flexDirection: 'row',
-                            marginTop: 40,
-                            width: 200,
-                            padding: 3,
-                        }}>
-                        <Image
-                            source={profileIcon}
+                       <View
                             style={{
-                                left: 10,
-                                width: 20,
-                                height: 19,
-                                color: '#F5313F',
+                                flexDirection: 'row',
+                                marginTop: 40,
+                                width: 200,
+                                padding: 3,
                             }}>
-                        </Image>
-                        <TouchableOpacity>
-                            <Text
-                                onPress={() => navigation.navigate('Home')}
+                            <Image
+                                source={profileIcon}
                                 style={{
-                                    color: '#6D6E9C',
-                                    left: 53,
-                                    letterSpacing: 1,
-                                    fontSize: 15,
-                                    bottom: 1,
-                                    fontWeight: '600',
+                                    left: 10,
+                                    width: 20,
+                                    height: 19,
+                                    color: '#F5313F',
                                 }}>
-                                Profile
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
+                            </Image>
+                            <TouchableOpacity>
+                                <Text
+                                    onPress={() => navigation.navigate('Home')}
+                                    style={{
+                                        color: '#6D6E9C',
+                                        left: 53,
+                                        letterSpacing: 1,
+                                        fontSize: 15,
+                                        bottom: 1,
+                                        fontWeight: '600',
+                                    }}>
+                                    Profile
+                                </Text>
+                            </TouchableOpacity>
+                        </View>
                     <View
                         style={{
                             flexDirection: 'row',
@@ -165,7 +167,7 @@ function MainMenu({ navigation }) {
                         </Image>
                         <TouchableOpacity>
                             <Text
-                                onPress={() => navigation.navigate('history')} 
+                                onPress={() => navigation.navigate('History')}
                                 style={{
                                     color: '#6D6E9C',
                                     left: 52.8,
@@ -197,7 +199,7 @@ function MainMenu({ navigation }) {
                         </Image>
                         <TouchableOpacity>
                             <Text
-                                // onPress={() => navigation.navigate('Home')} 
+                                onPress={() => navigation.navigate('Address')} 
                                 style={{
                                     color: '#6D6E9C',
                                     left: 55.8,
@@ -379,8 +381,8 @@ export default function App() {
                                 </Image>
                             </TouchableOpacity>)
                     }} />
-                    <Drawer.Screen
-                    name="history"
+                <Drawer.Screen
+                    name="History"
                     component={OrderHistory}
                     options={{
                         title: "Uncle John Pizzas",
@@ -396,6 +398,32 @@ export default function App() {
                             <TouchableOpacity>
                                 <Image
                                     source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
+                    <Drawer.Screen
+                    name="Address"
+                    component={Address}
+                    options={{
+                        title: "Deliver to: Home",
+                        left: -10,
+                        // headerTitleAlign: 'center',
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={Baket}
                                     style={{
                                         width: 17,
                                         height: 16.15,
