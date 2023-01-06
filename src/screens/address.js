@@ -1,4 +1,5 @@
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, Touchable } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import LinearGradient from "react-native-linear-gradient";
 
 
@@ -31,53 +32,55 @@ export default function Address({ navigation }) {
                         borderBottomRightRadius: 30,
                         alignItems: 'center',
                     }}>
-                    <View
-                        style={{
-                            width: 400,
-                            // borderBottomWidth: 1,
-                            borderTopWidth: 1,
-                            borderColor: '#DADAE5',
-                            padding: 20,
-                            flexDirection: 'column',
-                            width: 380,
-                            justifyContent: 'center',
-                            alignContent: 'center',
-                            alignItems: 'center',
-                        }}>
+                    <TouchableOpacity>
                         <View
                             style={{
-                                flexDirection: 'row',
-                                width: 250,
+                                width: 400,
+                                // borderBottomWidth: 1,
+                                borderTopWidth: 1,
+                                borderColor: '#DADAE5',
+                                padding: 20,
+                                flexDirection: 'column',
+                                width: 380,
+                                justifyContent: 'center',
+                                alignContent: 'center',
+                                alignItems: 'center',
                             }}>
-                            <Image
-                                source={currentLocation}
+                            <View
                                 style={{
-                                    left: 11,
-                                    width: 29,
-                                    height: 27,
+                                    flexDirection: 'row',
+                                    width: 250,
                                 }}>
-                            </Image>
-                            <Image
-                                source={current}
-                                style={{
-                                    left: -7.5,
-                                    top: 9.8,
-                                    width: 9.33,
-                                    height: 9,
-                                }}>
-                            </Image>
-                            <Text
-                                style={{
-                                    fontSize: 20,
-                                    marginLeft: 27,
-                                    fontWeight: '900',
-                                    color: '#6D6E9C',
-                                }}>
-                                Current Location
-                            </Text>
+                                <Image
+                                    source={currentLocation}
+                                    style={{
+                                        left: 11,
+                                        width: 29,
+                                        height: 27,
+                                    }}>
+                                </Image>
+                                <Image
+                                    source={current}
+                                    style={{
+                                        left: -7.5,
+                                        top: 9.8,
+                                        width: 9.33,
+                                        height: 9,
+                                    }}>
+                                </Image>
+                                <Text
+                                    style={{
+                                        fontSize: 20,
+                                        marginLeft: 27,
+                                        fontWeight: '900',
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Current Location
+                                </Text>
 
+                            </View>
                         </View>
-                    </View>
+                    </TouchableOpacity>
                     <View
                         style={{
                             width: 400,
