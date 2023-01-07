@@ -1,5 +1,6 @@
 import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+// import CreatePizzaOne from './CreatePizza/createpizza1';
 
 export default function HomeScreen({ navigation }) {
   var pizzaImg = require('../assest/Card/crustone.png');
@@ -155,14 +156,16 @@ export default function HomeScreen({ navigation }) {
           alignSelf: 'center',
           padding: 5,
         }}>
-          <Text style={{
-            top: 12,
-            textAlign: 'center',
-            color: '#F5313F',
-            fontFamily: 'Roboto',
-            fontSize: 25,
-            fontWeight: '300',
-          }}>
+          <Text
+            onPress={() => navigation.navigate('Pizza1')}
+            style={{
+              top: 12,
+              textAlign: 'center',
+              color: '#F5313F',
+              fontFamily: 'Roboto',
+              fontSize: 25,
+              fontWeight: '300',
+            }}>
             Create your <B>Own pizza</B>
           </Text>
           <Text style={{

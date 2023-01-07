@@ -430,7 +430,7 @@ export default function PaymentMethod({ navigation }) {
                     padding: 5,
                   }}>
                   <Text
-                   onPress={() => navigation.navigate('History')}
+                    onPress={() => navigation.navigate('History')}
                     style={{
                       top: 4,
                       fontSize: 28,
