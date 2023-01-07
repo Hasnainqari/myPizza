@@ -1,6 +1,7 @@
 import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-const HomeScreen = (navigation) => {
+
+export default function HomeScreen({ navigation }) {
   var pizzaImg = require('../assest/Card/crustone.png');
   var pizzaImg2 = require('../assest/Card/crusttwo.png');
 
@@ -120,6 +121,7 @@ const HomeScreen = (navigation) => {
 
                   }}>
                   <Text
+                    onPress={() => navigation.navigate('Payment')}
                     style={{
                       borderRadius: 20,
                       lineHeight: 23,
@@ -192,5 +194,3 @@ const HomeScreen = (navigation) => {
 
   );
 }
-
-export default HomeScreen;
