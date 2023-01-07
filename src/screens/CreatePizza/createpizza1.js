@@ -162,32 +162,32 @@ export default function Pizzaone({ navigation }) {
                             padding: 5,
                             justifyContent: 'space-between',
                         }}>
-                       <TouchableOpacity>
-                       <Text
-                            style={{
-                                fontSize: 22,
-                                letterSpacing: 1,
-                                color: '#6D6E9C',
-                                left: 25,
-                                top: 30,
-                            }}>
-                            Small
-                        </Text>
-                       </TouchableOpacity>
-                       <TouchableOpacity>
-                       <Text
-                            style={{
-                                fontSize: 22,
-                                letterSpacing: 1,
-                                color: '#6D6E9C',
-                                left: -16,
-                                top: 30,
-                            }}>
-                            Large
-                        </Text>
-                       </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Text
+                                style={{
+                                    fontSize: 22,
+                                    letterSpacing: 1,
+                                    color: '#6D6E9C',
+                                    left: 25,
+                                    top: 30,
+                                }}>
+                                Small
+                            </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Text
+                                style={{
+                                    fontSize: 22,
+                                    letterSpacing: 1,
+                                    color: '#6D6E9C',
+                                    left: -16,
+                                    top: 30,
+                                }}>
+                                Large
+                            </Text>
+                        </TouchableOpacity>
                     </View>
-                   <LinearGradient
+                    <LinearGradient
                         useAngle={true}
                         angle={108}
                         angleCenter={{ x: 0.5, y: 0.5 }}
@@ -201,21 +201,21 @@ export default function Pizzaone({ navigation }) {
                             top: -15,
                             borderRadius: 30,
                         }}>
-                            <TouchableOpacity>
-                        <Text
-                            style={{
-                                fontSize: 22,
-                                fontWeight: '700',
-                                letterSpacing: 1,
-                                color: '#ffffff',
-                                left: 14,
-                                // top: 30,
-                            }}>
-                            Medium
-                        </Text>
-                   </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Text
+                                style={{
+                                    fontSize: 22,
+                                    fontWeight: '700',
+                                    letterSpacing: 1,
+                                    color: '#ffffff',
+                                    left: 14,
+                                    // top: 30,
+                                }}>
+                                Medium
+                            </Text>
+                        </TouchableOpacity>
                     </LinearGradient>
-                </View>     
+                </View>
             </View>
         </View>
     );
