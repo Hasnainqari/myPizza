@@ -86,37 +86,37 @@ function MainMenu({ navigation }) {
                         alignContent: 'center',
                         alignItems: 'center',
                     }}>
-                       <View
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            marginTop: 40,
+                            width: 200,
+                            padding: 3,
+                        }}>
+                        <Image
+                            source={profileIcon}
                             style={{
-                                flexDirection: 'row',
-                                marginTop: 40,
-                                width: 200,
-                                padding: 3,
+                                left: 10,
+                                width: 20,
+                                height: 19,
+                                color: '#F5313F',
                             }}>
-                            <Image
-                                source={profileIcon}
+                        </Image>
+                        <TouchableOpacity>
+                            <Text
+                                onPress={() => navigation.navigate('Home')}
                                 style={{
-                                    left: 10,
-                                    width: 20,
-                                    height: 19,
-                                    color: '#F5313F',
+                                    color: '#6D6E9C',
+                                    left: 53,
+                                    letterSpacing: 1,
+                                    fontSize: 15,
+                                    bottom: 1,
+                                    fontWeight: '600',
                                 }}>
-                            </Image>
-                            <TouchableOpacity>
-                                <Text
-                                    onPress={() => navigation.navigate('Home')}
-                                    style={{
-                                        color: '#6D6E9C',
-                                        left: 53,
-                                        letterSpacing: 1,
-                                        fontSize: 15,
-                                        bottom: 1,
-                                        fontWeight: '600',
-                                    }}>
-                                    Profile
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
+                                Profile
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
                     <View
                         style={{
                             flexDirection: 'row',
@@ -199,7 +199,7 @@ function MainMenu({ navigation }) {
                         </Image>
                         <TouchableOpacity>
                             <Text
-                                onPress={() => navigation.navigate('Address')} 
+                                onPress={() => navigation.navigate('Address')}
                                 style={{
                                     color: '#6D6E9C',
                                     left: 55.8,
@@ -406,7 +406,7 @@ export default function App() {
                                 </Image>
                             </TouchableOpacity>)
                     }} />
-                    <Drawer.Screen
+                <Drawer.Screen
                     name="Address"
                     component={Address}
                     options={{
