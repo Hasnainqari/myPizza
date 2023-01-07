@@ -77,210 +77,216 @@ export default function Address({ navigation }) {
                                     }}>
                                     Current Location
                                 </Text>
-
                             </View>
                         </View>
                     </TouchableOpacity>
-                    <View
-                        style={{
-                            width: 400,
-                            borderTopWidth: 1,
-                            borderColor: '#DADAE5',
-                            paddingTop: 22,
-                            paddingBottom: 33,
-                            flexDirection: 'column',
-                            width: 380,
-                            justifyContent: 'center',
-                            alignContent: 'center',
-                            alignItems: 'center',
-                        }}>
+                    <TouchableOpacity>
                         <View
                             style={{
-                                flexDirection: 'row',
-                                width: 250,
-                            }}>
-                            <Image
-                                source={Home}
-                                style={{
-                                    color: '#F5313F',
-                                    left: 14,
-                                    width: 25,
-                                    height: 23,
-                                }}>
-                            </Image>
-                            <Text
-                                style={{
-                                    top: -6,
-                                    letterSpacing: 0.5,
-                                    fontSize: 20,
-                                    marginLeft: 40,
-                                    fontWeight: '900',
-                                    color: '#6D6E9C',
-                                }}>
-                                Home
-                            </Text>
-                            <Text
-                                style={{
-                                    top: 18,
-                                    letterSpacing: 0.3,
-                                    fontSize: 15,
-                                    marginLeft: -45,
-                                    color: '#6D6E9C',
-                                }}>
-                                3728  Brand Road, Swift Current
-                            </Text>
-                        </View>
-                    </View>
-                    <View
-                        style={{
-                            width: 400,
-                            borderTopWidth: 1,
-                            borderColor: '#DADAE5',
-                            paddingTop: 22,
-                            paddingBottom: 33,
-                            flexDirection: 'column',
-                            width: 380,
-                            justifyContent: 'center',
-                            alignContent: 'center',
-                            alignItems: 'center',
-                        }}>
-                        <View
-                            style={{
-                                flexDirection: 'row',
-                                width: 250,
-                            }}>
-                            <Image
-                                source={location}
-                                style={{
-                                    color: '#F5313F',
-                                    left: 14,
-                                    width: 23,
-                                    height: 26,
-                                }}>
-                            </Image>
-                            <Text
-                                style={{
-                                    top: -6,
-                                    letterSpacing: 0.5,
-                                    fontSize: 20,
-                                    marginLeft: 40,
-                                    fontWeight: '900',
-                                    color: '#6D6E9C',
-                                }}>
-                                Other
-                            </Text>
-                            <Text
-                                style={{
-                                    top: 18,
-                                    letterSpacing: 0.5,
-                                    fontSize: 15,
-                                    marginLeft: -45,
-                                    color: '#6D6E9C',
-                                }}>
-                                81 Springside, Lancaster
-                            </Text>
-                        </View>
-                    </View>
-                    <View
-                        style={{
-                            width: 400,
-                            // borderBottomWidth: 2,
-                            borderTopWidth: 1,
-                            borderColor: '#DADAE5',
-                            paddingTop: 22,
-                            paddingBottom: 33,
-                            flexDirection: 'column',
-                            width: 380,
-                            justifyContent: 'center',
-                            alignContent: 'center',
-                            alignItems: 'center',
-                        }}>
-                        <View
-                            style={{
-                                flexDirection: 'row',
-                                width: 250,
-                            }}>
-                            <Image
-                                source={work}
-                                style={{
-                                    color: '#F5313F',
-                                    left: 13,
-                                    width: 28.83,
-                                    height: 25,
-                                }}>
-                            </Image>
-                            <Text
-                                style={{
-                                    top: -6,
-                                    letterSpacing: 0.5,
-                                    fontSize: 20,
-                                    marginLeft: 40,
-                                    fontWeight: '900',
-                                    color: '#6D6E9C',
-                                }}>
-                                Work
-                            </Text>
-                            <Text
-                                style={{
-                                    top: 18,
-                                    letterSpacing: 0.5,
-                                    fontSize: 15,
-                                    marginLeft: -45,
-                                    color: '#6D6E9C',
-                                }}>
-                                4932 Sixth Street, Westminster
-                            </Text>
-                        </View>
-                    </View>
-                    <View
-                        style={{
-                            width: 400,
-                            borderBottomWidth: 1,
-                            borderTopWidth: 1,
-                            borderColor: '#DADAE5',
-                            padding: 23,
-                            flexDirection: 'column',
-                            width: 380,
-                            justifyContent: 'center',
-                            alignContent: 'center',
-                            alignItems: 'center',
-                        }}>
-                        <View
-                            style={{
-                                flexDirection: 'row',
-                                width: 250,
+                                width: 400,
+                                borderTopWidth: 1,
+                                borderColor: '#DADAE5',
+                                paddingTop: 22,
+                                paddingBottom: 33,
+                                flexDirection: 'column',
+                                width: 380,
+                                justifyContent: 'center',
+                                alignContent: 'center',
+                                alignItems: 'center',
                             }}>
                             <View
                                 style={{
-                                    backgroundColor: '#feeaec',
-                                    width: 25,
-                                    height: 25,
-                                    left: 17,
-                                    borderRadius: 30
+                                    flexDirection: 'row',
+                                    width: 250,
                                 }}>
+                                <Image
+                                    source={Home}
+                                    style={{
+                                        color: '#F5313F',
+                                        left: 14,
+                                        width: 25,
+                                        height: 23,
+                                    }}>
+                                </Image>
+                                <Text
+                                    style={{
+                                        top: -6,
+                                        letterSpacing: 0.5,
+                                        fontSize: 20,
+                                        marginLeft: 40,
+                                        fontWeight: '900',
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Home
+                                </Text>
+                                <Text
+                                    style={{
+                                        top: 18,
+                                        letterSpacing: 0.3,
+                                        fontSize: 15,
+                                        marginLeft: -45,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    3728  Brand Road, Swift Current
+                                </Text>
                             </View>
-                            <Image
-                                source={plus}
-                                style={{
-                                    top: 6,
-                                    left: -1.5,
-                                    width: 12,
-                                    height: 12,
-                                }}>
-                            </Image>
-                            <Text
-                                style={{
-                                    marginTop: -3,
-                                    fontSize: 20,
-                                    marginLeft: 38,
-                                    fontWeight: '900',
-                                    color: '#FFA360',
-                                }}>
-                                Add a new address
-                            </Text>
-
                         </View>
-                    </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View
+                            style={{
+                                width: 400,
+                                borderTopWidth: 1,
+                                borderColor: '#DADAE5',
+                                paddingTop: 22,
+                                paddingBottom: 33,
+                                flexDirection: 'column',
+                                width: 380,
+                                justifyContent: 'center',
+                                alignContent: 'center',
+                                alignItems: 'center',
+                            }}>
+                            <View
+                                style={{
+                                    flexDirection: 'row',
+                                    width: 250,
+                                }}>
+                                <Image
+                                    source={location}
+                                    style={{
+                                        color: '#F5313F',
+                                        left: 14,
+                                        width: 23,
+                                        height: 26,
+                                    }}>
+                                </Image>
+                                <Text
+                                    style={{
+                                        top: -6,
+                                        letterSpacing: 0.5,
+                                        fontSize: 20,
+                                        marginLeft: 40,
+                                        fontWeight: '900',
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Other
+                                </Text>
+                                <Text
+                                    style={{
+                                        top: 18,
+                                        letterSpacing: 0.5,
+                                        fontSize: 15,
+                                        marginLeft: -45,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    81 Springside, Lancaster
+                                </Text>
+                            </View>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View
+                            style={{
+                                width: 400,
+                                // borderBottomWidth: 2,
+                                borderTopWidth: 1,
+                                borderColor: '#DADAE5',
+                                paddingTop: 22,
+                                paddingBottom: 33,
+                                flexDirection: 'column',
+                                width: 380,
+                                justifyContent: 'center',
+                                alignContent: 'center',
+                                alignItems: 'center',
+                            }}>
+                            <View
+                                style={{
+                                    flexDirection: 'row',
+                                    width: 250,
+                                }}>
+                                <Image
+                                    source={work}
+                                    style={{
+                                        color: '#F5313F',
+                                        left: 13,
+                                        width: 28.83,
+                                        height: 25,
+                                    }}>
+                                </Image>
+                                <Text
+                                    style={{
+                                        top: -6,
+                                        letterSpacing: 0.5,
+                                        fontSize: 20,
+                                        marginLeft: 40,
+                                        fontWeight: '900',
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Work
+                                </Text>
+                                <Text
+                                    style={{
+                                        top: 18,
+                                        letterSpacing: 0.5,
+                                        fontSize: 15,
+                                        marginLeft: -45,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    4932 Sixth Street, Westminster
+                                </Text>
+                            </View>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View
+                            style={{
+                                width: 400,
+                                borderBottomWidth: 1,
+                                borderTopWidth: 1,
+                                borderColor: '#DADAE5',
+                                padding: 23,
+                                flexDirection: 'column',
+                                width: 380,
+                                justifyContent: 'center',
+                                alignContent: 'center',
+                                alignItems: 'center',
+                            }}>
+                            <View
+                                style={{
+                                    flexDirection: 'row',
+                                    width: 250,
+                                }}>
+                                <View
+                                    style={{
+                                        backgroundColor: '#feeaec',
+                                        width: 25,
+                                        height: 25,
+                                        left: 17,
+                                        borderRadius: 30
+                                    }}>
+                                </View>
+                                <Image
+                                    source={plus}
+                                    style={{
+                                        top: 6,
+                                        left: -1.5,
+                                        width: 12,
+                                        height: 12,
+                                    }}>
+                                </Image>
+                                <Text
+                                    style={{
+                                        marginTop: -3,
+                                        fontSize: 20,
+                                        marginLeft: 38,
+                                        fontWeight: '900',
+                                        color: '#FFA360',
+                                    }}>
+                                    Add a new address
+                                </Text>
+                            </View>
+                        </View>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>
