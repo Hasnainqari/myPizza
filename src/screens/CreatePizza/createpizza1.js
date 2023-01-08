@@ -149,7 +149,7 @@ export default function Pizzaone({ navigation }) {
                                 top: 12,
                                 letterSpacing: 0.4,
                                 fontSize: 25,
-                                color: '#A0A8CC',
+                                color: '#6D6E9C',
                             }}>
                             Choose your <B>size</B>
                         </Text>
@@ -209,13 +209,39 @@ export default function Pizzaone({ navigation }) {
                                     letterSpacing: 1,
                                     color: '#ffffff',
                                     left: 14,
-                                    // top: 30,
                                 }}>
                                 Medium
                             </Text>
                         </TouchableOpacity>
                     </LinearGradient>
                 </View>
+            </View>
+            <View style={{
+                top: -180,
+                // left: '43.5%',
+            }}>
+                <LinearGradient
+                    useAngle={true}
+                    angle={108}
+                    angleCenter={{ x: 0.5, y: 0.5 }}
+                    locations={[0.3, 0.9]}
+                    colors={['#F5313F', '#FFAA6C']}
+                    style={{
+                       padding:14,
+                       top: -18,
+                    }}>
+                    <Text
+                        style={{
+                            left: '43.5%',
+                            color: '#ffffff',
+                            fontSize: 23,
+                            fontWeight: '900',
+                            letterSpacing: 1,
+                            fontFamily: 'Roboto',
+                        }}>
+                        Next
+                    </Text>
+                </LinearGradient>
             </View>
         </View>
     );
