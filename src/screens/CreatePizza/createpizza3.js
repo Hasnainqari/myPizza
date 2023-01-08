@@ -150,7 +150,7 @@ export default function Pizzathree({ navigation }) {
                         backgroundColor: '#f9f8fb',
                         width: '90%',
                         height: '29%',
-                        top: -190,
+                        top: -185,
                         alignSelf: 'center',
                         borderRadius: 20,
                     }}>
@@ -269,7 +269,7 @@ export default function Pizzathree({ navigation }) {
                     colors={['#F5313F', '#FFAA6C']}
                     style={{
                         padding: 14,
-                        top: -18,
+                        top: -14,
                     }}>
                     <Text
                         onPress={() => navigation.navigate('Payment')}
