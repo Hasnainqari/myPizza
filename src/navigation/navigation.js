@@ -9,6 +9,7 @@ import OrderHistory from '../screens/history';
 import Address from '../screens/address';
 import Pizzaone from '../screens/CreatePizza/createpizza1';
 import Pizzatwo from '../screens/CreatePizza/createpizza2';
+import Pizzathree from '../screens/CreatePizza/createpizza3';
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -460,9 +461,35 @@ export default function App() {
                                 </Image>
                             </TouchableOpacity>)
                     }} />
-                       <Drawer.Screen
+                <Drawer.Screen
                     name="Pizza2"
                     component={Pizzatwo}
+                    options={{
+                        title: "Uncle John Pizzas ",
+                        left: -10,
+                        headerTitleAlign: 'center',
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
+                <Drawer.Screen
+                    name="Pizza3"
+                    component={Pizzathree}
                     options={{
                         title: "Uncle John Pizzas ",
                         left: -10,

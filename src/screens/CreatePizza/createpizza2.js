@@ -71,9 +71,9 @@ export default function Pizzatwo({ navigation }) {
                             letterSpacing: 0.3,
                             fontFamily: 'Roboto',
                         }}>
-                         <B style={{}}>, crust, topings</B>
+                        <B style={{}}>, crust, topings</B>
                     </Text>
-                   
+
                 </View>
             </LinearGradient>
             <View>
@@ -233,7 +233,7 @@ export default function Pizzatwo({ navigation }) {
                         top: -18,
                     }}>
                     <Text
-                    //  onPress={() => navigation.navigate('Pizza2')}
+                        onPress={() => navigation.navigate('Pizza3')}
                         style={{
                             left: '43.5%',
                             color: '#ffffff',

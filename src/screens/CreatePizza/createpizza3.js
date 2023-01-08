@@ -1,9 +1,11 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
-export default function Pizzaone({ navigation }) {
+export default function Pizzathree({ navigation }) {
     const B = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
     const pizzaImgOne = require('../CreatePizza/pizzaImg/pizza1.png');
+    const pepperoni1 = require('../CreatePizza/pizzaImg/pepperoni1.png');
+    const pepperoni2 = require('../CreatePizza/pizzaImg/pepperoni2.png');
     return (
         <View
             style={{
@@ -45,7 +47,7 @@ export default function Pizzaone({ navigation }) {
                             letterSpacing: 0.3,
                             fontFamily: 'Roboto',
                         }}>
-                        $10.00
+                        $14.00
                     </Text>
                     <Text
                         style={{
@@ -54,11 +56,24 @@ export default function Pizzaone({ navigation }) {
                             textTransform: 'uppercase',
                             top: -42,
                             color: '#ffffff',
+                            // opacity: ,
+                            letterSpacing: 0.3,
+                            fontFamily: 'Roboto',
+                        }}>
+                        <B>Medium, thick crust,</B>
+                    </Text>
+                    <Text
+                        style={{
+                            fontSize: 15,
+                            left: 148,
+                            textTransform: 'uppercase',
+                            top: -64.8,
+                            color: '#ffffff',
                             opacity: 0.5,
                             letterSpacing: 0.3,
                             fontFamily: 'Roboto',
                         }}>
-                        <B>size, crust, topings</B>
+                        <B style={{}}> topings</B>
                     </Text>
                 </View>
             </LinearGradient>
@@ -71,14 +86,14 @@ export default function Pizzaone({ navigation }) {
                     }}>
                     <View
                         style={{
-                            borderWidth: 22,
+                            borderWidth: 16,
                             borderColor: 'white',
                             opacity: 1,
-                            width: '80%',
+                            width: '75%',
                             justifyContent: 'center',
                             alignSelf: 'center',
                             marginTop: -150,
-                            height: '82%',
+                            height: '77%',
                             borderRadius: 200,
                             shadowOpacity: 10,
                             alignItems: 'center',
@@ -88,8 +103,8 @@ export default function Pizzaone({ navigation }) {
                             source={pizzaImgOne}
                             style={{
                                 marginTop: 39,
-                                width: 356,
-                                height: 282,
+                                width: 348,
+                                height: 272,
                             }}>
 
                         </Image>
@@ -100,11 +115,11 @@ export default function Pizzaone({ navigation }) {
                             borderWidth: 24,
                             borderColor: 'white',
                             opacity: 0.6,
-                            width: '93%',
+                            width: '88%',
                             justifyContent: 'center',
                             alignSelf: 'center',
-                            top: -311.3,
-                            height: '96%',
+                            top: -291.3,
+                            height: '90.1%',
                             borderRadius: 200,
                             shadowOpacity: 10,
                             alignItems: 'center',
@@ -132,10 +147,10 @@ export default function Pizzaone({ navigation }) {
                 </View>
                 <View
                     style={{
-                        backgroundColor: '#ffffff',
+                        backgroundColor: '#f9f8fb',
                         width: '90%',
-                        height: '27%',
-                        top: -168,
+                        height: '29%',
+                        top: -190,
                         alignSelf: 'center',
                         borderRadius: 20,
                     }}>
@@ -150,75 +165,101 @@ export default function Pizzaone({ navigation }) {
                                 letterSpacing: 0.4,
                                 fontSize: 25,
                                 color: '#6D6E9C',
+
                             }}>
-                            Choose your <B>size</B>
+                            Choose up to<B>7 Topings</B>
+                        </Text>
+                        <Text
+                            style={{
+                                top: 7,
+                                fontSize: 12,
+                                fontWeight: '900',
+                                opacity: 0.7,
+                                letterSpacing: 1,
+                                color: '#6D6E9C',
+                                textTransform: 'uppercase',
+                            }}>
+                            free 3 add-ons
                         </Text>
                     </View>
                     <View
                         style={{
-                            flexDirection: 'row',
-                            width: '100%',
-                            alignSelf: 'center',
-                            padding: 5,
-                            justifyContent: 'space-between',
+                            width: 225,
+                            height: 66,
+                            top: 18,
+                            left: 20,
+                            borderRadius: 20,
+                            backgroundColor: '#ffffff',
+
                         }}>
-                        <TouchableOpacity>
-                            <Text
-                                style={{
-                                    fontSize: 22,
-                                    letterSpacing: 1,
-                                    color: '#6D6E9C',
-                                    left: 25,
-                                    top: 30,
-                                }}>
-                                Small
-                            </Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity>
-                            <Text
-                                style={{
-                                    fontSize: 22,
-                                    letterSpacing: 1,
-                                    color: '#6D6E9C',
-                                    left: -16,
-                                    top: 30,
-                                }}>
-                                Large
-                            </Text>
-                        </TouchableOpacity>
                     </View>
-                    <LinearGradient
-                        useAngle={true}
-                        angle={108}
-                        angleCenter={{ x: 0.5, y: 0.5 }}
-                        locations={[0.3, 0.9]}
-                        colors={['#F5313F', '#FFAA6C']}
+                    <Image
+                        source={pepperoni1}
                         style={{
-                            width: "35%",
-                            height: "35%",
-                            padding: 8,
-                            left: '33%',
-                            top: -15,
-                            borderRadius: 30,
+                            width: 70,
+                            height: 70,
+                            top: -50,
+                            left: 28,
                         }}>
-                        <TouchableOpacity>
-                            <Text
-                                style={{
-                                    fontSize: 22,
-                                    fontWeight: '700',
-                                    letterSpacing: 1,
-                                    color: '#ffffff',
-                                    left: 14,
-                                }}>
-                                Medium
-                            </Text>
-                        </TouchableOpacity>
-                    </LinearGradient>
+                    </Image>
+                    <Text
+                        style={{
+                            fontFamily: 'Roboto',
+                            fontSize: 18,
+                            top: -110,
+                            left: 110,
+                            fontWeight: '900',
+                            letterSpacing: 0.5,
+                            color: '#6D6E9C',
+                        }}>
+                        Pepperoni
+                    </Text>
+                    <Text
+                        style={{
+                            fontFamily: 'Roboto',
+                            fontSize: 18,
+                            top: -115,
+                            left: 110,
+                            letterSpacing: 0.5,
+                            color: '#6D6E9C',
+                        }}>
+                        +$0.00
+                    </Text>
+                    <View
+                        style={{
+                            width: 23,
+                            height: 23,
+                            top: -143,
+                            left: 200,
+                            borderRadius: 30,
+                            backgroundColor: '#ecebf4',
+                        }}>
+
+                    </View>
+                    <View
+                        style={{
+                            width: 225,
+                            height: 66,
+                            top: -195,
+                            left: 260,
+                            borderRadius: 20,
+                            backgroundColor: '#fff',
+
+                        }}>
+                    </View>
+                    <Image
+                        source={pepperoni2}
+                        style={{
+                            width: 70,
+                            height: 70,
+                            top: -261,
+                            left: 268,
+                        }}>
+                    </Image>
                 </View>
             </View>
             <View style={{
-                top: -180,
-                // left: '43.5%',
+                top: -198,
             }}>
                 <LinearGradient
                     useAngle={true}
@@ -231,7 +272,7 @@ export default function Pizzaone({ navigation }) {
                         top: -18,
                     }}>
                     <Text
-                     onPress={() => navigation.navigate('Pizza2')}
+                        //  onPress={() => navigation.navigate('Pizza2')}
                         style={{
                             left: '43.5%',
                             color: '#ffffff',
