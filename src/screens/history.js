@@ -24,7 +24,7 @@ export default function OrderHistory({ navigation }) {
                 <View
                     style={{
                         paddingLeft: 29,
-                        marginTop: 15,
+                        marginTop: 2,
                     }}>
                     <TouchableOpacity>
                         <Image

@@ -163,7 +163,8 @@ export default function HomeScreen({ navigation }) {
               textAlign: 'center',
               color: '#F5313F',
               fontFamily: 'Roboto',
-              fontSize: 25,
+              fontSize: 28,
+              left: -1,
               fontWeight: '300',
             }}>
             Create your <B>Own pizza</B>
