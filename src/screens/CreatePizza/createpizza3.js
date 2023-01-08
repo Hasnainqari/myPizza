@@ -272,7 +272,7 @@ export default function Pizzathree({ navigation }) {
                         top: -18,
                     }}>
                     <Text
-                         onPress={() => navigation.navigate('Payment')}
+                        onPress={() => navigation.navigate('Payment')}
                         style={{
                             left: '43.5%',
                             color: '#ffffff',
