@@ -4,10 +4,10 @@ import LinearGradient from 'react-native-linear-gradient';
 export default function OrderHistory({ navigation }) {
     var historyp2 = require('../assest/drawerIcon/historyp1.png');
     var historyp1 = require('../assest/drawerIcon/historyp2.png');
-    var orderconfirm = require('../assest/drawerIcon/order.png');
-    var prepare = require('../assest/drawerIcon/prepare.png');
-    var deliver = require('../assest/drawerIcon/deliver.png');
-    var transit = require('../assest/drawerIcon/transit.png');
+    var allicons = require('../assest/drawerIcon/detailicons.png');
+    var cashbag = require('../assest/drawerIcon/cashbag.png');
+    var arrow = require('../assest/drawerIcon/arrow.png');
+
     return (
         <View
             style={{
@@ -31,8 +31,8 @@ export default function OrderHistory({ navigation }) {
                             source={historyp1}
                             style={{
                                 width: 32,
-                                left: -6,
-                                top: 21.5,
+                                left: -6.5,
+                                top: 22,
                                 height: 36,
                             }}>
                         </Image>
@@ -74,7 +74,7 @@ export default function OrderHistory({ navigation }) {
                             opacity: 0.9,
                             width: '90%',
                             alignSelf: 'center',
-                            marginTop: -75,
+                            marginTop: -95,
                             height: '80%',
                             borderRadius: 20,
                             alignItems: 'center',
@@ -176,7 +176,7 @@ export default function OrderHistory({ navigation }) {
                                 width: '80%',
                                 marginTop: 12,
                                 padding: 3,
-                                height: '70%',
+                                // height: '70%',
                             }}>
                             <View
                                 style={{
@@ -186,7 +186,178 @@ export default function OrderHistory({ navigation }) {
                                     marginTop: 15,
                                     padding: 5,
                                 }}>
+                                <Image
+                                    source={allicons}
+                                    style={{
+                                        top: -32,
+                                        left: -22,
+                                    }}>
+                                </Image>
+                                <Text
+                                    style={{
+                                        left: -10,
+                                        top: -160,
+                                        letterSpacing: 0.8,
+                                        fontWeight: '700',
+                                        color: '#6D6E9C',
+                                    }}>
+                                    11:43 AM
+                                </Text>
+                                <Text
+                                    style={{
+                                        left: -65,
+                                        top: -143,
+                                        letterSpacing: 1,
+                                        fontWeight: '700',
+                                        fontSize: 18,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    OrderConfirmed
+                                </Text>
+                                <Text
+                                    style={{
+                                        left: -188,
+                                        top: -95,
+                                        letterSpacing: 0.8,
+                                        fontWeight: '700',
+                                        color: '#6D6E9C',
+                                    }}>
+                                    12:01 PM
+                                </Text>
+                                <Text
+                                    style={{
+                                        left: -239.2,
+                                        top: -79,
+                                        letterSpacing: 1.3,
+                                        fontWeight: '700',
+                                        fontSize: 18,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Preparing...
+                                </Text>
+                                <Text
+                                    style={{
+                                        left: -332,
+                                        top: -25.8,
+                                        letterSpacing: 1.3,
+                                        fontWeight: '100',
+                                        fontSize: 18,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Dispatched
+                                </Text>
+                                <Text
+                                    style={{
+                                        left: -420,
+                                        top: 39,
+                                        letterSpacing: 1.3,
+                                        fontWeight: '100',
+                                        fontSize: 18,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    In Transit
+                                </Text>
+                                <Text
+                                    style={{
+                                        left: -499,
+                                        top: 105,
+                                        letterSpacing: 1.3,
+                                        fontWeight: '100',
+                                        fontSize: 18,
+                                        color: '#6D6E9C',
+                                    }}>
+                                    Delivered
+                                </Text>
                             </View>
+                        </View>
+                    </View>
+                </View>
+                <View
+                    style={{
+                        backgroundColor: '#e7f1eb',
+                        width: '90%',
+                        alignSelf: 'center',
+                        height: '17%',
+                        marginTop: -190,
+                        marginBottom: 10,
+                        borderRadius: 20,
+                        borderColor: '#57C168',
+                        borderWidth: 1,
+                        flexDirection: 'row',
+                        elevation: 2,
+                        shadowColor: '#000',
+                        shadowOpacity: 0.7
+                    }}>
+                    <View
+                        style={{
+                            width: '100%',
+                            marginTop: -15,
+                            padding: 5,
+                            alignItems: 'center',
+                            flexDirection: 'row',
+                        }}>
+                        <TouchableOpacity>
+                            <View style={{
+                                width: 50,
+                                height: 50,
+                                top: 7,
+                                left: 22,
+                                borderWidth: 1,
+                                backgroundColor: '#def3e1',
+                                borderColor: '#6bc77a',
+                                borderRadius: 30,
+                            }}>
+                                <Image
+                                    source={cashbag}
+                                    style={{
+                                        top: 12,
+                                        left: 12.5,
+                                    }}>
+                                </Image>
+                            </View>
+                        </TouchableOpacity>
+                        <Text
+                            style={{
+                                fontSize: 18,
+                                left: 38,
+                                top: -5,
+                                letterSpacing: 0.5,
+                                fontFamily: 'Roboto',
+                                fontWeight: '700',
+                                color: '#57C168',
+                            }}>
+                            Earned cashback!
+                        </Text>
+                        <Text
+                            style={{
+                                fontSize: 18,
+                                left: -91,
+                                top: 19,
+                                opacity: 0.8,
+                                fontFamily: 'Roboto',
+                                fontWeight: '100',
+                                color: '#6D6E9C',
+                            }}>
+                            + $1.45
+                        </Text>
+                        <View
+                            style={{
+                                height: 80,
+                                top: 8,
+                                borderLeftWidth: 1,
+                                marginLeft: 35,
+                                borderColor: '#57C168',
+                            }}>
+                            <TouchableOpacity>
+                                <Image
+                                    source={arrow}
+                                    style={{
+                                        left: 20,
+                                        top: 28,
+                                    }}>
+
+                                </Image>
+                            </TouchableOpacity>
                         </View>
                     </View>
                 </View>
