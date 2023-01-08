@@ -231,7 +231,7 @@ export default function Pizzaone({ navigation }) {
                         top: -18,
                     }}>
                     <Text
-                     onPress={() => navigation.navigate('Pizza2')}
+                        onPress={() => navigation.navigate('Pizza2')}
                         style={{
                             left: '43.5%',
                             color: '#ffffff',

@@ -281,7 +281,7 @@ export default function Pizzathree({ navigation }) {
                             letterSpacing: 1,
                             fontFamily: 'Roboto',
                         }}>
-                        Next
+                        Done
                     </Text>
                 </LinearGradient>
             </View>
