@@ -45,7 +45,7 @@ export default function Pizzatwo({ navigation }) {
                             letterSpacing: 0.3,
                             fontFamily: 'Roboto',
                         }}>
-                        $10.00
+                        $12.00
                     </Text>
                     <Text
                         style={{
@@ -54,12 +54,26 @@ export default function Pizzatwo({ navigation }) {
                             textTransform: 'uppercase',
                             top: -42,
                             color: '#ffffff',
+                            // opacity: ,
+                            letterSpacing: 0.3,
+                            fontFamily: 'Roboto',
+                        }}>
+                        <B>Medium</B>
+                    </Text>
+                    <Text
+                        style={{
+                            fontSize: 15,
+                            left: 53,
+                            textTransform: 'uppercase',
+                            top: -64.8,
+                            color: '#ffffff',
                             opacity: 0.5,
                             letterSpacing: 0.3,
                             fontFamily: 'Roboto',
                         }}>
-                        <B>size, crust, topings</B>
+                         <B style={{}}>, crust, topings</B>
                     </Text>
+                   
                 </View>
             </LinearGradient>
             <View>
@@ -151,7 +165,7 @@ export default function Pizzatwo({ navigation }) {
                                 fontSize: 25,
                                 color: '#6D6E9C',
                             }}>
-                            Choose your <B>size</B>
+                            Choose your <B>crust</B>
                         </Text>
                     </View>
                     <View
@@ -168,22 +182,10 @@ export default function Pizzatwo({ navigation }) {
                                     fontSize: 22,
                                     letterSpacing: 1,
                                     color: '#6D6E9C',
-                                    left: 25,
+                                    left: 240,
                                     top: 30,
                                 }}>
-                                Small
-                            </Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity>
-                            <Text
-                                style={{
-                                    fontSize: 22,
-                                    letterSpacing: 1,
-                                    color: '#6D6E9C',
-                                    left: -16,
-                                    top: 30,
-                                }}>
-                                Large
+                                Thick
                             </Text>
                         </TouchableOpacity>
                     </View>
@@ -194,23 +196,23 @@ export default function Pizzatwo({ navigation }) {
                         locations={[0.3, 0.9]}
                         colors={['#F5313F', '#FFAA6C']}
                         style={{
-                            width: "35%",
-                            height: "35%",
+                            width: "30%",
+                            height: "30%",
                             padding: 8,
-                            left: '33%',
-                            top: -15,
+                            left: '11%',
+                            top: -11,
                             borderRadius: 30,
                         }}>
                         <TouchableOpacity>
                             <Text
                                 style={{
-                                    fontSize: 22,
+                                    fontSize: 18,
                                     fontWeight: '700',
-                                    letterSpacing: 1,
+                                    letterSpacing: 2,
                                     color: '#ffffff',
-                                    left: 14,
+                                    left: 22,
                                 }}>
-                                Medium
+                                Thin
                             </Text>
                         </TouchableOpacity>
                     </LinearGradient>
@@ -231,7 +233,7 @@ export default function Pizzatwo({ navigation }) {
                         top: -18,
                     }}>
                     <Text
-                     onPress={() => navigation.navigate('Pizza2')}
+                    //  onPress={() => navigation.navigate('Pizza2')}
                         style={{
                             left: '43.5%',
                             color: '#ffffff',
