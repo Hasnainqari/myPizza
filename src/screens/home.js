@@ -192,9 +192,19 @@ export default function HomeScreen({ navigation }) {
             }}>
 
           </Image>
+          <Image
+            source={pizzaImg2}
+            style={{
+              // marginRight: 100,
+              marginLeft: -20,
+              top: 10,
+              width: 350,
+              height: 250,
+            }}>
+
+          </Image>
         </View>
       </View>
     </View>
-
   );
 }

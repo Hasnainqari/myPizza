@@ -1,6 +1,6 @@
 import { View, Text, Image, TouchableOpacity, Button, } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-
+// import Thankyou from './thankyou';
 export default function OrderHistory({ navigation }) {
     var historyp2 = require('../assest/drawerIcon/historyp1.png');
     var historyp1 = require('../assest/drawerIcon/historyp2.png');
@@ -342,6 +342,7 @@ export default function OrderHistory({ navigation }) {
                         </Text>
                         <View
                             style={{
+
                                 height: 80,
                                 top: 8,
                                 borderLeftWidth: 1,
@@ -349,14 +350,17 @@ export default function OrderHistory({ navigation }) {
                                 borderColor: '#57C168',
                             }}>
                             <TouchableOpacity>
+                                {/* <Text */}
+                                {/* // style */}
+                                {/* // onPress={()=> navigation.navigate('Thank')}> */}
                                 <Image
                                     source={arrow}
                                     style={{
                                         left: 20,
                                         top: 28,
                                     }}>
-
                                 </Image>
+                                {/* </Text> */}
                             </TouchableOpacity>
                         </View>
                     </View>

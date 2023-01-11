@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, Button, View, Image, TouchableOpacity } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import DrawerItem from '@react-navigation/drawer';
 import HomeScreen from '../screens/home';
@@ -10,6 +11,7 @@ import Address from '../screens/address';
 import Pizzaone from '../screens/CreatePizza/createpizza1';
 import Pizzatwo from '../screens/CreatePizza/createpizza2';
 import Pizzathree from '../screens/CreatePizza/createpizza3';
+import Thankyou from '../screens/thankyou';
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -333,6 +335,7 @@ function MainMenu({ navigation }) {
 
 
 const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function App() {
 
@@ -513,6 +516,32 @@ export default function App() {
                                 </Image>
                             </TouchableOpacity>)
                     }} />
+                    <Drawer.Screen
+                    name="Thank"
+                    component={Thankyou}
+                    options={{
+                        title: "Uncle John Pizzas ",
+                        left: -10,
+                        headerTitleAlign: 'center',
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
             </Drawer.Navigator>
         </NavigationContainer>
     );
@@ -526,3 +555,11 @@ const MyTheme = {
         primary: 'rgb(255, 45, 82)',
     },
 };
+
+{/* <Stack.Navigator>
+                <Stack.Screen
+                name='thankyou'
+                component={Thankyou}
+                >
+                </Stack.Screen>
+            </Stack.Navigator> */}

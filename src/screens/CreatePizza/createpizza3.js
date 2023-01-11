@@ -1,4 +1,5 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import LinearGradient from "react-native-linear-gradient";
 
 export default function Pizzathree({ navigation }) {
@@ -7,6 +8,7 @@ export default function Pizzathree({ navigation }) {
     const pepperoni1 = require('../CreatePizza/pizzaImg/pepperoni1.png');
     const pepperoni2 = require('../CreatePizza/pizzaImg/pepperoni2.png');
     return (
+
         <View
             style={{
                 flex: 1,
@@ -142,7 +144,7 @@ export default function Pizzathree({ navigation }) {
                             }}>
 
                             12"
-                        </Text>
+                            </Text>
                     </View> */}
                 </View>
                 <View
@@ -182,80 +184,82 @@ export default function Pizzathree({ navigation }) {
                             free 3 add-ons
                         </Text>
                     </View>
-                    <View
-                        style={{
-                            width: 225,
-                            height: 66,
-                            top: 18,
-                            left: 20,
-                            borderRadius: 20,
-                            backgroundColor: '#ffffff',
+                    {/* <ScrollView contentContainerStyle='flex-row justify-center' horizontal showsHorizontalScrollIndicator={false}> */}
+                        <View
+                            style={{
+                                width: 225,
+                                height: 66,
+                                top: 18,
+                                left: 20,
+                                borderRadius: 20,
+                                backgroundColor: '#ffffff',
 
-                        }}>
-                    </View>
-                    <Image
-                        source={pepperoni1}
-                        style={{
-                            width: 70,
-                            height: 70,
-                            top: -50,
-                            left: 28,
-                        }}>
-                    </Image>
-                    <Text
-                        style={{
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            top: -110,
-                            left: 110,
-                            fontWeight: '900',
-                            letterSpacing: 0.5,
-                            color: '#6D6E9C',
-                        }}>
-                        Pepperoni
-                    </Text>
-                    <Text
-                        style={{
-                            fontFamily: 'Roboto',
-                            fontSize: 18,
-                            top: -115,
-                            left: 110,
-                            letterSpacing: 0.5,
-                            color: '#6D6E9C',
-                        }}>
-                        +$0.00
-                    </Text>
-                    <View
-                        style={{
-                            width: 23,
-                            height: 23,
-                            top: -143,
-                            left: 200,
-                            borderRadius: 30,
-                            backgroundColor: '#ecebf4',
-                        }}>
+                            }}>
+                        </View>
+                        <Image
+                            source={pepperoni1}
+                            style={{
+                                width: 70,
+                                height: 70,
+                                top: -50,
+                                left: 28,
+                            }}>
+                        </Image>
+                        <Text
+                            style={{
+                                fontFamily: 'Roboto',
+                                fontSize: 18,
+                                top: -110,
+                                left: 110,
+                                fontWeight: '900',
+                                letterSpacing: 0.5,
+                                color: '#6D6E9C',
+                            }}>
+                            Pepperoni
+                        </Text>
+                        <Text
+                            style={{
+                                fontFamily: 'Roboto',
+                                fontSize: 18,
+                                top: -115,
+                                left: 110,
+                                letterSpacing: 0.5,
+                                color: '#6D6E9C',
+                            }}>
+                            +$0.00
+                        </Text>
+                        <View
+                            style={{
+                                width: 23,
+                                height: 23,
+                                top: -143,
+                                left: 200,
+                                borderRadius: 30,
+                                backgroundColor: '#ecebf4',
+                            }}>
 
-                    </View>
-                    <View
-                        style={{
-                            width: 225,
-                            height: 66,
-                            top: -195,
-                            left: 260,
-                            borderRadius: 20,
-                            backgroundColor: '#fff',
+                        </View>
+                        <View
+                            style={{
+                                width: 225,
+                                height: 66,
+                                top: -195,
+                                left: 260,
+                                borderRadius: 20,
+                                backgroundColor: '#fff',
 
-                        }}>
-                    </View>
-                    <Image
-                        source={pepperoni2}
-                        style={{
-                            width: 70,
-                            height: 70,
-                            top: -261,
-                            left: 268,
-                        }}>
-                    </Image>
+                            }}>
+                        </View>
+                        <Image
+                            source={pepperoni2}
+                            style={{
+                                width: 70,
+                                height: 70,
+                                top: -261,
+                                left: 268,
+                            }}>
+                        </Image>
+                    {/* </ScrollView> */}
                 </View>
             </View>
             <View style={{
