@@ -382,7 +382,7 @@ export default function App() {
                         headerRight: () => (
                             <TouchableOpacity>
                                 <Image
-                                    
+
                                     source={homeImag}
                                     style={{
                                         width: 17,
@@ -451,6 +451,7 @@ export default function App() {
                         title: "Uncle John Pizzas ",
                         left: -10,
                         headerTitleAlign: 'center',
+                        headerShown: false,
                         headerTitleStyle:
                         {
                             fontWeight: '300',
@@ -477,6 +478,7 @@ export default function App() {
                         title: "Uncle John Pizzas ",
                         left: -10,
                         headerTitleAlign: 'center',
+                        headerShown: false,
                         headerTitleStyle:
                         {
                             fontWeight: '300',
@@ -503,6 +505,7 @@ export default function App() {
                         title: "Uncle John Pizzas ",
                         left: -10,
                         headerTitleAlign: 'center',
+                        headerShown: false,
                         headerTitleStyle:
                         {
                             fontWeight: '300',
@@ -529,6 +532,7 @@ export default function App() {
                         title: "Uncle John Pizzas ",
                         left: -10,
                         headerTitleAlign: 'center',
+                        headerShown: false,
                         headerTitleStyle:
                         {
                             fontWeight: '300',
@@ -555,6 +559,7 @@ export default function App() {
                         title: "Uncle John Pizzas ",
                         left: -10,
                         headerTitleAlign: 'center',
+                        headerShown: false,
                         headerTitleStyle:
                         {
                             fontWeight: '300',

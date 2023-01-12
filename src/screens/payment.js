@@ -31,7 +31,7 @@ export default function PaymentMethod({ navigation }) {
               left: -75,
               top: 15,
             }}
-            onPress={() => navigation.navigate('Home')}>
+            onPress={() => navigation.navigate('Pizza3')}>
             <Image
               source={backImg}
               style={{

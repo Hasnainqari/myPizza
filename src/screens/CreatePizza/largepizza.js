@@ -4,6 +4,8 @@ import LinearGradient from "react-native-linear-gradient";
 export default function LargePizza({ navigation }) {
     const B = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
     const pizzaImgOne = require('../CreatePizza/pizzaImg/pizza1.png');
+    var backImg = require('../../assest/drawerIcon/backImg.png');
+    var HomeImg = require('../../assest/drawerIcon/home2.png');
     return (
         <View
             style={{
@@ -11,6 +13,56 @@ export default function LargePizza({ navigation }) {
                 backgroundColor: '#eae9ef',
                 flexDirection: 'column',
             }}>
+            <View>
+                <View
+                    style={{
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        backgroundColor: '#fff',
+                        height: 50,
+                    }}>
+                    <Text
+                        style={{
+                            left: -75,
+                            top: 15,
+                        }}
+                        onPress={() => navigation.navigate('Home')}>
+                        <Image
+                            source={backImg}
+                            style={{
+                                width: 15,
+                                height: 15,
+                            }}>
+
+                        </Image>
+                    </Text>
+                    <Text
+                        style={{
+                            left: -9,
+                            top: 10,
+                            fontWeight: '400',
+                            letterSpacing: 0.7,
+                            fontSize: 20,
+                        }}>
+                        Uncle John Pizzas
+                    </Text>
+                    <Text
+                        style={{
+                            left: 74,
+                            top: 11,
+                        }}
+                        onPress={() => navigation.navigate('Home')}>
+                        <Image
+                            source={HomeImg}
+                            style={{
+                                width: 18,
+                                height: 18,
+                            }}>
+
+                        </Image>
+                    </Text>
+                </View>
+            </View>
             <LinearGradient
                 useAngle={true}
                 angle={108}
