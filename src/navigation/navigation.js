@@ -11,7 +11,9 @@ import Address from '../screens/address';
 import Pizzaone from '../screens/CreatePizza/createpizza1';
 import Pizzatwo from '../screens/CreatePizza/createpizza2';
 import Pizzathree from '../screens/CreatePizza/createpizza3';
-import Thankyou from '../screens/thankyou';
+// import Thankyou from '../screens/thankyou';
+import SmallPizza from '../screens/CreatePizza/smallpizza';
+import LargePizza from '../screens/CreatePizza/largepizza';
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -349,11 +351,12 @@ export default function App() {
                     name="Home"
                     component={HomeScreen}
                     options={{
-
                         title: 'Deliever to Home:',
                         headerRight: () =>
                         (<TouchableOpacity>
-                            <Image source={Baket}
+                            <Image
+
+                                source={Baket}
                                 style={{
                                     width: 17,
                                     height: 16.15,
@@ -366,6 +369,7 @@ export default function App() {
                     name="Payment"
                     component={PaymentMethod}
                     options={{
+                        headerShown: false,
                         title: "Uncle John Pizzas",
                         headerTitleAlign: 'center',
                         headerTitleStyle:
@@ -378,6 +382,7 @@ export default function App() {
                         headerRight: () => (
                             <TouchableOpacity>
                                 <Image
+                                    
                                     source={homeImag}
                                     style={{
                                         width: 17,
@@ -391,6 +396,7 @@ export default function App() {
                     name="History"
                     component={OrderHistory}
                     options={{
+                        headerShown: false,
                         title: "Uncle John Pizzas",
                         headerTitleAlign: 'center',
                         headerTitleStyle:
@@ -418,7 +424,7 @@ export default function App() {
                     options={{
                         title: "Deliver to: Home",
                         left: -10,
-                        // headerTitleAlign: 'center',
+                        headerShown: false,
                         headerTitleStyle:
                         {
                             fontWeight: '300',
@@ -516,9 +522,35 @@ export default function App() {
                                 </Image>
                             </TouchableOpacity>)
                     }} />
-                    <Drawer.Screen
-                    name="Thank"
-                    component={Thankyou}
+                <Drawer.Screen
+                    name="Small"
+                    component={SmallPizza}
+                    options={{
+                        title: "Uncle John Pizzas ",
+                        left: -10,
+                        headerTitleAlign: 'center',
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
+                <Drawer.Screen
+                    name="Large"
+                    component={LargePizza}
                     options={{
                         title: "Uncle John Pizzas ",
                         left: -10,
@@ -546,7 +578,36 @@ export default function App() {
         </NavigationContainer>
     );
 }
-
+{/* <NavigationContainer>
+    <Stack.Navigator>
+        <Stack.Screen
+            name="Small"
+            component={SmallPizza}
+            options={{
+                title: "Uncle John Pizzas ",
+                left: -10,
+                headerTitleAlign: 'center',
+                headerTitleStyle:
+                {
+                    fontWeight: '300',
+                    letterSpacing: 0.3,
+                    color: '#6D6E9C',
+                },
+                headerStyle: { backgroundColor: '#ffffff' },
+                headerRight: () => (
+                    <TouchableOpacity>
+                        <Image
+                            source={homeImag}
+                            style={{
+                                width: 17,
+                                height: 16.15,
+                                marginRight: 20,
+                            }}>
+                        </Image>
+                    </TouchableOpacity>)
+            }} />
+    </Stack.Navigator>
+</NavigationContainer> */}
 
 const MyTheme = {
     ...DefaultTheme,

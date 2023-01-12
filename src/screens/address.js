@@ -11,12 +11,64 @@ export default function Address({ navigation }) {
     var location = require('../assest/drawerIcon/Location.png');
     var work = require('../assest/drawerIcon/work.png');
     var plus = require('../assest/drawerIcon/plus.png');
+    var backImg = require('../assest/drawerIcon/backImg.png');
+    var HomeImg = require('../assest/drawerIcon/home2.png');
     return (
         <View
             style={{
                 backgroundColor: '#e6ecf1',
                 flex: 1,
             }}>
+            <View>
+                <View
+                    style={{
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        backgroundColor: '#fff',
+                        height: 50,
+                    }}>
+                    <Text
+                        style={{
+                            left: -75,
+                            top: 15,
+                        }}
+                        onPress={() => navigation.navigate('Home')}>
+                        <Image
+                            source={backImg}
+                            style={{
+                                width: 15,
+                                height: 15,
+                            }}>
+
+                        </Image>
+                    </Text>
+                    <Text
+                        style={{
+                            left: -38,
+                            top: 10,
+                            fontWeight: '400',
+                            letterSpacing: 0.7,
+                            fontSize: 20,
+                        }}>
+                        Deliver to: Home
+                    </Text>
+                    <Text
+                        style={{
+                            left: 74,
+                            top: 11,
+                        }}
+                        onPress={() => navigation.navigate('Home')}>
+                        <Image
+                            source={HomeImg}
+                            style={{
+                                width: 18,
+                                height: 18,
+                            }}>
+
+                        </Image>
+                    </Text>
+                </View>
+            </View>
             <View
                 style={{
                     color: '#000',

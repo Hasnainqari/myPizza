@@ -1,12 +1,13 @@
 import { View, Text, Image, TouchableOpacity, Button, } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-// import Thankyou from './thankyou';
 export default function OrderHistory({ navigation }) {
     var historyp2 = require('../assest/drawerIcon/historyp1.png');
     var historyp1 = require('../assest/drawerIcon/historyp2.png');
     var allicons = require('../assest/drawerIcon/detailicons.png');
     var cashbag = require('../assest/drawerIcon/cashbag.png');
     var arrow = require('../assest/drawerIcon/arrow.png');
+    var backImg = require('../assest/drawerIcon/backImg.png');
+    var HomeImg = require('../assest/drawerIcon/home2.png');
 
     return (
         <View
@@ -14,6 +15,56 @@ export default function OrderHistory({ navigation }) {
                 flex: 1,
                 backgroundColor: 'F9F7FB',
             }}>
+            <View>
+                <View
+                    style={{
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        backgroundColor: '#fff',
+                        height: 50,
+                    }}>
+                    <Text
+                        style={{
+                            left: -75,
+                            top: 15,
+                        }}
+                        onPress={() => navigation.navigate('Payment')}>
+                        <Image
+                            source={backImg}
+                            style={{
+                                width: 15,
+                                height: 15,
+                            }}>
+
+                        </Image>
+                    </Text>
+                    <Text
+                        style={{
+                            left: -9,
+                            top: 10,
+                            fontWeight: '400',
+                            letterSpacing: 0.7,
+                            fontSize: 20,
+                        }}>
+                        Uncle John Pizzas
+                    </Text>
+                    <Text
+                        style={{
+                            left: 74,
+                            top: 11,
+                        }}
+                        onPress={() => navigation.navigate('Home')}>
+                        <Image
+                            source={HomeImg}
+                            style={{
+                                width: 18,
+                                height: 18,
+                            }}>
+
+                        </Image>
+                    </Text>
+                </View>
+            </View>
             <LinearGradient
                 useAngle={true}
                 angle={108}

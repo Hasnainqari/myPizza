@@ -1,7 +1,7 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
-export default function Pizzaone({ navigation }) {
+export default function SmallPizza({ navigation }) {
     const B = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
     const pizzaImgOne = require('../CreatePizza/pizzaImg/pizza1.png');
     return (
@@ -45,7 +45,7 @@ export default function Pizzaone({ navigation }) {
                             letterSpacing: 0.3,
                             fontFamily: 'Roboto',
                         }}>
-                        $10.00
+                        $8.00
                     </Text>
                     <Text
                         style={{
@@ -164,15 +164,15 @@ export default function Pizzaone({ navigation }) {
                         }}>
                         <TouchableOpacity>
                             <Text
-                                onPress={() => navigation.navigate('Small')}
+                                onPress={() => navigation.navigate('Pizza1')}
                                 style={{
                                     fontSize: 22,
                                     letterSpacing: 1,
                                     color: '#6D6E9C',
-                                    left: 25,
+                                    left: 21,
                                     top: 30,
                                 }}>
-                                Small
+                                Medium
                             </Text>
                         </TouchableOpacity>
                         <TouchableOpacity>
@@ -182,7 +182,7 @@ export default function Pizzaone({ navigation }) {
                                     fontSize: 22,
                                     letterSpacing: 1,
                                     color: '#6D6E9C',
-                                    left: -16,
+                                    left: -17,
                                     top: 30,
                                 }}>
                                 Large
@@ -199,7 +199,7 @@ export default function Pizzaone({ navigation }) {
                             width: "35%",
                             height: "35%",
                             padding: 8,
-                            left: '33%',
+                            left: '34.5%',
                             top: -15,
                             borderRadius: 30,
                         }}>
@@ -210,9 +210,9 @@ export default function Pizzaone({ navigation }) {
                                     fontWeight: '700',
                                     letterSpacing: 1,
                                     color: '#ffffff',
-                                    left: 14,
+                                    left: 24,
                                 }}>
-                                Medium
+                                Small
                             </Text>
                         </TouchableOpacity>
                     </LinearGradient>
