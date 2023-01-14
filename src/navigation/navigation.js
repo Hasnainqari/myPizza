@@ -14,6 +14,7 @@ import Pizzathree from '../screens/CreatePizza/createpizza3';
 // import Thankyou from '../screens/thankyou';
 import SmallPizza from '../screens/CreatePizza/smallpizza';
 import LargePizza from '../screens/CreatePizza/largepizza';
+import Pizza4 from '../screens/CreatePizza/createpizza4';
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -579,41 +580,37 @@ export default function App() {
                                 </Image>
                             </TouchableOpacity>)
                     }} />
+                <Drawer.Screen
+                    name="Pizza4"
+                    component={Pizza4}
+                    options={{
+                        title: "Uncle John Pizzas ",
+                        left: -10,
+                        headerTitleAlign: 'center',
+                        headerShown: false,
+                        headerTitleStyle:
+                        {
+                            fontWeight: '300',
+                            letterSpacing: 0.3,
+                            color: '#6D6E9C',
+                        },
+                        headerStyle: { backgroundColor: '#ffffff' },
+                        headerRight: () => (
+                            <TouchableOpacity>
+                                <Image
+                                    source={homeImag}
+                                    style={{
+                                        width: 17,
+                                        height: 16.15,
+                                        marginRight: 20,
+                                    }}>
+                                </Image>
+                            </TouchableOpacity>)
+                    }} />
             </Drawer.Navigator>
         </NavigationContainer>
     );
 }
-{/* <NavigationContainer>
-    <Stack.Navigator>
-        <Stack.Screen
-            name="Small"
-            component={SmallPizza}
-            options={{
-                title: "Uncle John Pizzas ",
-                left: -10,
-                headerTitleAlign: 'center',
-                headerTitleStyle:
-                {
-                    fontWeight: '300',
-                    letterSpacing: 0.3,
-                    color: '#6D6E9C',
-                },
-                headerStyle: { backgroundColor: '#ffffff' },
-                headerRight: () => (
-                    <TouchableOpacity>
-                        <Image
-                            source={homeImag}
-                            style={{
-                                width: 17,
-                                height: 16.15,
-                                marginRight: 20,
-                            }}>
-                        </Image>
-                    </TouchableOpacity>)
-            }} />
-    </Stack.Navigator>
-</NavigationContainer> */}
-
 const MyTheme = {
     ...DefaultTheme,
     colors: {

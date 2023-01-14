@@ -1,7 +1,7 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
-export default function Pizzatwo({ navigation }) {
+export default function Pizza4({ navigation }) {
     const B = props => <Text style={{ fontWeight: 'bold' }}>{props.children}</Text>
     const pizzaImgOne = require('../CreatePizza/pizzaImg/pizza1.png');
     var backImg = require('../../assest/drawerIcon/backImg.png');
@@ -220,28 +220,6 @@ export default function Pizzatwo({ navigation }) {
                             Choose your <B>crust</B>
                         </Text>
                     </View>
-                    <View
-                        style={{
-                            flexDirection: 'row',
-                            width: '100%',
-                            alignSelf: 'center',
-                            padding: 5,
-                            justifyContent: 'space-between',
-                        }}>
-                        <TouchableOpacity>
-                            <Text
-                                onPress={() => navigation.navigate('Pizza4')}
-                                style={{
-                                    fontSize: 22,
-                                    letterSpacing: 1,
-                                    color: '#6D6E9C',
-                                    left: 240,
-                                    top: 30,
-                                }}>
-                                Thick
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
                     <LinearGradient
                         useAngle={true}
                         angle={108}
@@ -265,10 +243,32 @@ export default function Pizzatwo({ navigation }) {
                                     color: '#ffffff',
                                     left: 22,
                                 }}>
-                                Thin
+                                Think
                             </Text>
                         </TouchableOpacity>
                     </LinearGradient>
+                    <View
+                        style={{
+                            flexDirection: 'row',
+                            width: '100%',
+                            alignSelf: 'center',
+                            padding: 5,
+                            justifyContent: 'space-between',
+                        }}>
+                        <TouchableOpacity>
+                            <Text
+                                style={{
+                                    fontSize: 22,
+                                    letterSpacing: 1,
+                                    color: '#6D6E9C',
+                                    left: 240,
+                                    top: 30,
+                                }}>
+                                Thick
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+
                 </View>
             </View>
             <View style={{
@@ -286,7 +286,6 @@ export default function Pizzatwo({ navigation }) {
                         top: -18,
                     }}>
                     <Text
-                        onPress={() => navigation.navigate('Pizza3')}
                         style={{
                             left: '43.5%',
                             color: '#ffffff',
